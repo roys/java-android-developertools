@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Developer Tools</string>
     <string name="title_tool_detail">Tool Detail</string>
+    <string name="screen_dimensions">Screen dimensions</string>
+    <string name="dalvik_explorer">Dalvik Explorer</string>
+    <string name="alogcat">aLogcat</string>
+    <string name="manifestviewer">Manifestviewer</string>
+    <string name="developer_options">Developer options</string>
+    <string name="apps">Apps</string>
+    <string name="resource_qualifiers">Resource qualifiers</string>
+    <string name="system_features">System features</string>
+    <string name="third_party_apps">Third party apps</string>
+    <string name="settings">Settings</string>
+    <string name="logo">Logo</string>
 </resources>

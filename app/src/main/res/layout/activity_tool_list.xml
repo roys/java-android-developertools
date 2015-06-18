@@ -1,5 +1,6 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -43,175 +44,13 @@
         android:layout_marginBottom="?attr/actionBarSize"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <fragment
+            android:id="@+id/main_list"
+            android:name="com.roysolberg.android.developertools.ui.fragment.MainFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="Resource qualifiers"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="System features"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="Screen dimensions"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="Dalvik Explorer"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="aLogcat"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="Manifestviewer"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="Developer options"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/cellphone_android"
-                android:drawableStart="@drawable/cellphone_android"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:drawablePadding="32dp"
-                android:fontFamily="sans-serif"
-                android:textSize="16sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="20dp"
-                android:text="Apps"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="72dp"
-                android:layout_marginStart="72dp"
-                android:background="#1F000000"
-                />
-        </LinearLayout>
+            tools:layout="@layout/fragment_main" />
+
     </android.support.v4.widget.NestedScrollView>
 
 

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/tinted_cellphone_android"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/tinted_cellphone_android"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/resource_qualifiers"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/tinted_checkbox_marked_outline"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/tinted_checkbox_marked_outline"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/system_features"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/tinted_fullscreen"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/tinted_fullscreen"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/screen_dimensions"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:singleLine="true"
+        android:text="@string/third_party_apps"
+        android:textColor="@color/accent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_dalvik_explorer"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/ic_dalvik_explorer"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/dalvik_explorer"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_alogcat"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/ic_alogcat"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/alogcat"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_manifestviewer"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/ic_manifestviewer"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/manifestviewer"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:singleLine="true"
+        android:text="@string/settings"
+        android:textColor="@color/accent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/tinted_settings_development"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/tinted_settings_development"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/developer_options"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/tinted_android_debug_bridge"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/tinted_android_debug_bridge"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/apps"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider"/>
+</LinearLayout>
