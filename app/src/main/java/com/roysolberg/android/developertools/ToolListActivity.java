@@ -49,7 +49,7 @@ public class ToolListActivity extends Activity
 //        if (behavior != null) {
 //            behavior.onNestedFling((CoordinatorLayout) findViewById(R.id.coordinatorLayout), appbarLayout, null, 0, 10000, true);
 //        }
-
+/*
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView_test);
         if (recyclerView != null) {
             recyclerView.setHasFixedSize(true);
@@ -85,7 +85,7 @@ public class ToolListActivity extends Activity
                 }
             });
         }
-
+*/
         if (findViewById(R.id.tool_detail_container) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-large and
