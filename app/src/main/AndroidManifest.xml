@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ToolListActivity"
+            android:name=".ui.activity.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +21,10 @@
         <activity
             android:name=".ToolDetailActivity"
             android:label="@string/title_tool_detail"
-            android:parentActivityName=".ToolListActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ToolListActivity" />
+                android:value=".MainActivity" />
         </activity>
     </application>
 

@@ -26,7 +26,8 @@
                 android:layout_marginRight="16dp"
                 android:src="@drawable/collapsable_toolbar_icon"
                 app:layout_collapseMode="parallax"
-                app:layout_scrollFlags="scroll" />
+                app:layout_scrollFlags="scroll"
+                android:contentDescription="@string/logo" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"

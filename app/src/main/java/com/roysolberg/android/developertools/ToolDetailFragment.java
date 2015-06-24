@@ -11,7 +11,7 @@ import com.roysolberg.android.developertools.dummy.DummyContent;
 
 /**
  * A fragment representing a single Tool detail screen.
- * This fragment is either contained in a {@link ToolListActivity}
+ * This fragment is either contained in a {@link MainActivity}
  * in two-pane mode (on tablets) or a {@link ToolDetailActivity}
  * on handsets.
  */

@@ -7,6 +7,7 @@
     android:paddingTop="8dp">
 
     <TextView
+        android:id="@+id/textView_resource_qualifiers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -26,9 +27,10 @@
         android:text="@string/resource_qualifiers"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 
     <TextView
+        android:id="@+id/textView_system_features"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -39,6 +41,7 @@
         android:ellipsize="end"
         android:focusable="true"
         android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
         android:paddingBottom="20dp"
         android:paddingLeft="16dp"
         android:paddingRight="@dimen/padding_right_main_list"
@@ -47,9 +50,10 @@
         android:text="@string/system_features"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 
     <TextView
+        android:id="@+id/textView_screen_dimensions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -60,6 +64,7 @@
         android:ellipsize="end"
         android:focusable="true"
         android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
         android:paddingBottom="20dp"
         android:paddingLeft="16dp"
         android:paddingRight="@dimen/padding_right_main_list"
@@ -68,12 +73,11 @@
         android:text="@string/screen_dimensions"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="48dp"
+        android:layout_height="48dp"
         android:ellipsize="end"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_vertical"
@@ -85,6 +89,7 @@
         android:textSize="14sp" />
 
     <TextView
+        android:id="@+id/textView_app_dalvik_explorer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -95,6 +100,7 @@
         android:ellipsize="end"
         android:focusable="true"
         android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
         android:paddingBottom="20dp"
         android:paddingLeft="16dp"
         android:paddingRight="@dimen/padding_right_main_list"
@@ -103,9 +109,10 @@
         android:text="@string/dalvik_explorer"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 
     <TextView
+        android:id="@+id/textView_app_alogcat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -116,6 +123,7 @@
         android:ellipsize="end"
         android:focusable="true"
         android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
         android:paddingBottom="20dp"
         android:paddingLeft="16dp"
         android:paddingRight="@dimen/padding_right_main_list"
@@ -124,9 +132,10 @@
         android:text="@string/alogcat"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 
     <TextView
+        android:id="@+id/textView_app_manifestviewer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -137,6 +146,7 @@
         android:ellipsize="end"
         android:focusable="true"
         android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
         android:paddingBottom="20dp"
         android:paddingLeft="16dp"
         android:paddingRight="@dimen/padding_right_main_list"
@@ -145,12 +155,11 @@
         android:text="@string/manifestviewer"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="48dp"
+        android:layout_height="48dp"
         android:ellipsize="end"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_vertical"
@@ -162,6 +171,7 @@
         android:textSize="14sp" />
 
     <TextView
+        android:id="@+id/textView_settings_development"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -172,6 +182,7 @@
         android:ellipsize="end"
         android:focusable="true"
         android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
         android:paddingBottom="20dp"
         android:paddingLeft="16dp"
         android:paddingRight="@dimen/padding_right_main_list"
@@ -180,9 +191,34 @@
         android:text="@string/developer_options"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 
     <TextView
+        android:id="@+id/textView_settings_permissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/tinted_ic_app_ops"
+        android:drawablePadding="@dimen/padding_drawable_main_list"
+        android:drawableStart="@drawable/tinted_ic_app_ops"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/padding_right_main_list"
+        android:paddingTop="16dp"
+        android:singleLine="true"
+        android:text="@string/app_ops"
+        android:visibility="gone"
+        android:textSize="16sp" />
+
+    <include layout="@layout/list_divider" />
+
+    <TextView
+        android:id="@+id/textView_settings_apps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -193,6 +229,7 @@
         android:ellipsize="end"
         android:focusable="true"
         android:fontFamily="sans-serif"
+        android:onClick="onListItemClicked"
         android:paddingBottom="20dp"
         android:paddingLeft="16dp"
         android:paddingRight="@dimen/padding_right_main_list"
@@ -201,5 +238,5 @@
         android:text="@string/apps"
         android:textSize="16sp" />
 
-    <include layout="@layout/list_divider"/>
+    <include layout="@layout/list_divider" />
 </LinearLayout>
