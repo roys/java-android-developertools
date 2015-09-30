@@ -18,7 +18,7 @@
     <string name="about_alogcat">aLogcat is a great Android system log file reader by Jeffrey Blattman.\n\nYou can download it from Play Store.\n\nPlease consider his donate version if you find it useful.</string>
     <string name="about_manifestviewer">ManifestViewer is a great way to get information about installed apps\' AndroidManifest.xml, including intent filters and permissions.\n\nThe app is created by susatthi and you can download it from Play Store.</string>
     <string name="package_name_dalvik_explorer">org.jessies.dalvikexplorer</string>
-    <string name="package_name_alogcat">org.jtb.alogcat</string>
-    <string name="package_name_alogcat_free">org.jtb.alogcat.donate</string>
+    <string name="package_name_alogcat">org.jtb.alogcat.donate</string>
+    <string name="package_name_alogcat_free">org.jtb.alogcat</string>
     <string name="package_name_manifestviewer">jp.susatthi.ManifestViewer</string>
 </resources>
