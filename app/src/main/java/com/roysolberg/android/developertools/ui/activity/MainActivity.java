@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.roysolberg.android.developertools.R;
 import com.roysolberg.android.developertools.ToolDetailActivity;
 import com.roysolberg.android.developertools.ToolDetailFragment;
+import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragment;
 
 // TODO: Extract strings
 public class MainActivity extends FragmentActivity {
@@ -38,6 +40,7 @@ public class MainActivity extends FragmentActivity {
 //            behavior.onNestedFling((CoordinatorLayout) findViewById(R.id.coordinatorLayout), appbarLayout, null, 0, 10000, true);
 //        }
 
+
         if (findViewById(R.id.tool_detail_container) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-large and
@@ -47,8 +50,12 @@ public class MainActivity extends FragmentActivity {
 
             ((Toolbar) findViewById(R.id.toolbar)).setTitle(getString(R.string.app_name));
 
-        } else {
-            ((CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout)).setTitle(getString(R.string.app_name));
+        } else { // Not two pane
+            if (sdkVersion > 9) { // TODO: The collapsing toolbar and nested scroll view and stuff hardly worked on Xperia X10 (2.3.3/9), any chance to get it to work?
+                ((CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout)).setTitle(getString(R.string.app_name));
+            } else {
+                ((Toolbar) findViewById(R.id.toolbar)).setTitle(getString(R.string.app_name));
+            }
         }
 
         try {
@@ -63,6 +70,15 @@ public class MainActivity extends FragmentActivity {
 
     public void onListItemClicked(View view) {
         switch (view.getId()) {
+            case R.id.textView_app_dalvik_explorer:
+                startApp(R.string.package_name_dalvik_explorer);
+                break;
+            case R.id.textView_app_alogcat:
+                startApp(R.string.package_name_alogcat, R.string.package_name_alogcat_free);
+                break;
+            case R.id.textView_app_manifestviewer:
+                startApp(R.string.package_name_manifestviewer);
+                break;
             case R.id.textView_settings_development:
                 startDevelopmentSettingsActivity();
                 break;
@@ -73,6 +89,44 @@ public class MainActivity extends FragmentActivity {
                 startPermissionManager();
                 break;
         }
+    }
+
+    private void startApp(int... packageNameResIds) {
+        boolean appFound = false;
+        for (int packageNameResId : packageNameResIds) {
+            try {
+                startActivity(getPackageManager().getLaunchIntentForPackage(getString(packageNameResId)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                appFound = true;
+            } catch (Exception e) {
+                /* no-op */
+            }
+        }
+        if (!appFound) {
+            showInstallAppDialog(packageNameResIds[0]);
+        }
+    }
+
+    protected void showInstallAppDialog(int packageNameResId) {
+        int titleResId, aboutAppResId;
+        switch (packageNameResId) {
+            case R.string.package_name_dalvik_explorer:
+                titleResId = R.string.dalvik_explorer;
+                aboutAppResId = R.string.about_dalvik_explorer;
+                break;
+            case R.string.package_name_alogcat:
+                packageNameResId = R.string.package_name_alogcat_free; // We send the user to the free version
+                titleResId = R.string.alogcat;
+                aboutAppResId = R.string.about_alogcat;
+                break;
+            case R.string.package_name_manifestviewer:
+                titleResId = R.string.dalvik_explorer;
+                aboutAppResId = R.string.about_manifestviewer;
+                break;
+            default:
+                throw new IllegalArgumentException("Unknown app with package name [" + getString(packageNameResId) + "]. Unable to show install dialog.");
+        }
+        DialogFragment installAppDialogFragment = InstallAppDialogFragment.newInstance(getString(R.string.install_app, getString(titleResId)), getString(aboutAppResId), getString(packageNameResId));
+        installAppDialogFragment.show(getSupportFragmentManager(), "dialog");
     }
 
     protected void startDevelopmentSettingsActivity() {

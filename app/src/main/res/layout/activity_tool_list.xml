@@ -24,10 +24,10 @@
                 android:layout_gravity="end"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
+                android:contentDescription="@string/logo"
                 android:src="@drawable/collapsable_toolbar_icon"
                 app:layout_collapseMode="parallax"
-                app:layout_scrollFlags="scroll"
-                android:contentDescription="@string/logo" />
+                app:layout_scrollFlags="scroll" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -53,6 +53,5 @@
             tools:layout="@layout/fragment_main" />
 
     </android.support.v4.widget.NestedScrollView>
-
 
 </android.support.design.widget.CoordinatorLayout>
