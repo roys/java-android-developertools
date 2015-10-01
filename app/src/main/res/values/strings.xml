@@ -21,4 +21,13 @@
     <string name="package_name_alogcat">org.jtb.alogcat.donate</string>
     <string name="package_name_alogcat_free">org.jtb.alogcat</string>
     <string name="package_name_manifestviewer">jp.susatthi.ManifestViewer</string>
+    <string name="fallback_no_qualifier">Fallback (no qualifier)</string>
+    <string name="qualifier_screen_size">@string/fallback_no_qualifier</string>
+    <string name="screen_size">Screen size</string>
+    <string name="screen_aspect">Screen aspect</string>
+    <string name="qualifier_screen_aspect">@string/fallback_no_qualifier</string>
+    <string name="api_level_4">API level 4</string>
+    <string name="api_level_1">API level 1</string>
+    <string name="screen_orientation">Screen orientation</string>
+    <string name="qualifier_screen_orientation">@string/fallback_no_qualifier</string>
 </resources>

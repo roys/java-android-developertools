@@ -18,6 +18,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.activity.ResourceQualifiersActivity"
+            android:label="@string/resource_qualifiers">
+        </activity>
+        <activity
             android:name=".ToolDetailActivity"
             android:label="@string/title_tool_detail"
             android:parentActivityName=".ui.activity.MainActivity">

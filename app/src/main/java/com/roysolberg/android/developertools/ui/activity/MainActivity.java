@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.facebook.stetho.Stetho;
 import com.roysolberg.android.developertools.R;
 import com.roysolberg.android.developertools.ToolDetailActivity;
 import com.roysolberg.android.developertools.ToolDetailFragment;
@@ -31,7 +32,8 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tool_list);
+        setContentView(R.layout.activity_main);
+        Stetho.initializeWithDefaults(this);
 
 //        AppBarLayout appbarLayout = (AppBarLayout) findViewById(R.id.appBarLayout);
 //        CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) appbarLayout.getLayoutParams();
@@ -40,6 +42,11 @@ public class MainActivity extends FragmentActivity {
 //            behavior.onNestedFling((CoordinatorLayout) findViewById(R.id.coordinatorLayout), appbarLayout, null, 0, 10000, true);
 //        }
 
+        try {
+            sdkVersion = Integer.parseInt(Build.VERSION.SDK);
+        } catch (NumberFormatException e) {
+            /* no-op */
+        }
 
         if (findViewById(R.id.tool_detail_container) != null) {
             // The detail container view will be present only in the
@@ -51,18 +58,13 @@ public class MainActivity extends FragmentActivity {
             ((Toolbar) findViewById(R.id.toolbar)).setTitle(getString(R.string.app_name));
 
         } else { // Not two pane
-            if (sdkVersion > 9) { // TODO: The collapsing toolbar and nested scroll view and stuff hardly worked on Xperia X10 (2.3.3/9), any chance to get it to work?
+            if (sdkVersion > 10) { // TODO: The collapsing toolbar and nested scroll view and stuff hardly worked on Xperia X10 (2.3.3/9) and Nexus One (2.3.6/10), any chance to get it to work?
                 ((CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout)).setTitle(getString(R.string.app_name));
             } else {
                 ((Toolbar) findViewById(R.id.toolbar)).setTitle(getString(R.string.app_name));
             }
         }
 
-        try {
-            sdkVersion = Integer.parseInt(Build.VERSION.SDK);
-        } catch (NumberFormatException e) {
-            /* no-op */
-        }
         if (sdkVersion >= 18 && sdkVersion <= 19) { // Android 4.3-4.4
             findViewById(R.id.textView_settings_permissions).setVisibility(View.VISIBLE);
         }
@@ -70,6 +72,9 @@ public class MainActivity extends FragmentActivity {
 
     public void onListItemClicked(View view) {
         switch (view.getId()) {
+            case R.id.textView_resource_qualifiers:
+                startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
+                break;
             case R.id.textView_app_dalvik_explorer:
                 startApp(R.string.package_name_dalvik_explorer);
                 break;

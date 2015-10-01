@@ -25,6 +25,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/resource_qualifiers"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
@@ -48,6 +49,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/system_features"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
@@ -71,6 +73,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/screen_dimensions"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
@@ -107,6 +110,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/dalvik_explorer"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
@@ -130,6 +134,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/alogcat"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
@@ -153,6 +158,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/manifestviewer"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
@@ -189,6 +195,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/developer_options"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
@@ -212,8 +219,9 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/app_ops"
-        android:visibility="gone"
-        android:textSize="16sp" />
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        android:visibility="gone" />
 
     <include layout="@layout/list_divider" />
 
@@ -236,6 +244,7 @@
         android:paddingTop="16dp"
         android:singleLine="true"
         android:text="@string/apps"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <include layout="@layout/list_divider" />
