@@ -12,7 +12,9 @@ public class ResourceQualifiersActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resource_qualifiers);
-        ((Toolbar) findViewById(R.id.toolbar)).setTitle(getString(R.string.resource_qualifiers));
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getString(R.string.resource_qualifiers));
+        toolbar.setNavigationIcon(R.drawable.tinted_arrow_left);
     }
 
 }

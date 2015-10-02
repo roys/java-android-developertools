@@ -13,13 +13,13 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.facebook.stetho.Stetho;
 import com.roysolberg.android.developertools.R;
-import com.roysolberg.android.developertools.ToolDetailActivity;
-import com.roysolberg.android.developertools.ToolDetailFragment;
 import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragment;
+import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
 
 // TODO: Extract strings
 public class MainActivity extends FragmentActivity {
@@ -48,7 +48,7 @@ public class MainActivity extends FragmentActivity {
             /* no-op */
         }
 
-        if (findViewById(R.id.tool_detail_container) != null) {
+        if (findViewById(R.id.layout_content) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-large and
             // res/values-sw600dp). If this view is present, then the
@@ -73,7 +73,12 @@ public class MainActivity extends FragmentActivity {
     public void onListItemClicked(View view) {
         switch (view.getId()) {
             case R.id.textView_resource_qualifiers:
-                startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
+                if (twoPaneMode) {
+                    ((ViewGroup)findViewById(R.id.layout_content)).removeAllViews();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new ResourceQualifiersFragment()).commit();
+                } else {
+                    startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
+                }
                 break;
             case R.id.textView_app_dalvik_explorer:
                 startApp(R.string.package_name_dalvik_explorer);
@@ -190,29 +195,4 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    /**
-     * Callback method from {@link MainFragment.Callbacks}
-     * indicating that the item with the given ID was selected.
-     */
-    public void onItemSelected(String id) {
-        if (twoPaneMode) {
-            // In two-pane mode, show the detail view in this activity by
-            // adding or replacing the detail fragment using a
-            // fragment transaction.
-            Bundle arguments = new Bundle();
-            arguments.putString(ToolDetailFragment.ARG_ITEM_ID, id);
-            ToolDetailFragment fragment = new ToolDetailFragment();
-            fragment.setArguments(arguments);
-            getFragmentManager().beginTransaction()
-                    .replace(R.id.tool_detail_container, fragment)
-                    .commit();
-
-        } else {
-            // In single-pane mode, simply start the detail activity
-            // for the selected item ID.
-            Intent detailIntent = new Intent(this, ToolDetailActivity.class);
-            detailIntent.putExtra(ToolDetailFragment.ARG_ITEM_ID, id);
-            startActivity(detailIntent);
-        }
-    }
 }
