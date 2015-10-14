@@ -8,9 +8,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Explode;
+import android.transition.Fade;
+import android.transition.Slide;
+import android.transition.Transition;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +37,13 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Transition transition = new Fade();
+            getWindow().setExitTransition(transition);
+            getWindow().setReenterTransition(transition);
+        }
+
         setContentView(R.layout.activity_main);
         Stetho.initializeWithDefaults(this);
 
@@ -67,6 +79,7 @@ public class MainActivity extends FragmentActivity {
 
         if (sdkVersion >= 18 && sdkVersion <= 19) { // Android 4.3-4.4
             findViewById(R.id.textView_settings_permissions).setVisibility(View.VISIBLE);
+            findViewById(R.id.include_list_divider).setVisibility(View.VISIBLE);
         }
     }
 
@@ -74,10 +87,14 @@ public class MainActivity extends FragmentActivity {
         switch (view.getId()) {
             case R.id.textView_resource_qualifiers:
                 if (twoPaneMode) {
-                    ((ViewGroup)findViewById(R.id.layout_content)).removeAllViews();
+                    ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
                     getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new ResourceQualifiersFragment()).commit();
                 } else {
-                    startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+                    } else {
+                        startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
+                    }
                 }
                 break;
             case R.id.textView_app_dalvik_explorer:

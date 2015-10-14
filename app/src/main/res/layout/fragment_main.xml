@@ -223,7 +223,10 @@
         android:textSize="16sp"
         android:visibility="gone" />
 
-    <include layout="@layout/list_divider" />
+    <include
+        android:id="@+id/include_list_divider"
+        layout="@layout/list_divider"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/textView_settings_apps"

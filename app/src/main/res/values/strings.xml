@@ -30,4 +30,10 @@
     <string name="api_level_1">API level 1</string>
     <string name="screen_orientation">Screen orientation</string>
     <string name="qualifier_screen_orientation">@string/fallback_no_qualifier</string>
+    <string name="api_level_17">API level 17</string>
+    <string name="layout_direction">Layout direction</string>
+    <string name="qualifier_layout_direction">@string/fallback_no_qualifier</string>
+    <string name="api_level_8">API level 8</string>
+    <string name="ui_mode">UI mode</string>
+    <string name="qualifier_ui_mode">@string/fallback_no_qualifier</string>
 </resources>
