@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qualifier_night_mode">notnight</string>
+</resources>

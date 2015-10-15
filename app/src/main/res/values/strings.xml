@@ -36,4 +36,8 @@
     <string name="api_level_8">API level 8</string>
     <string name="ui_mode">UI mode</string>
     <string name="qualifier_ui_mode">@string/fallback_no_qualifier</string>
+    <string name="night_mode">Night mode</string>
+    <string name="qualifier_night_mode">@string/fallback_no_qualifier</string>
+    <string name="screen_pixel_density">Screen pixel density (dpi)</string>
+    <string name="qualifier_screen_pixel_density">@string/fallback_no_qualifier</string>
 </resources>
