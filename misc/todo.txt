@@ -1,0 +1,4 @@
+font info app?
+cam info app
+sensor info app
+network info app

@@ -40,4 +40,19 @@
     <string name="qualifier_night_mode">@string/fallback_no_qualifier</string>
     <string name="screen_pixel_density">Screen pixel density (dpi)</string>
     <string name="qualifier_screen_pixel_density">@string/fallback_no_qualifier</string>
+    <string name="touchscreen_type">Touchscreen type</string>
+    <string name="qualifier_touchscreen_type">@string/fallback_no_qualifier</string>
+    <string name="keyboard_availability">Keyboard availability</string>
+    <string name="qualifier_keyboard_availability">@string/fallback_no_qualifier</string>
+    <string name="primary_text_input_method">Primary text input method</string>
+    <string name="qualifier_primary_text_input_method">@string/fallback_no_qualifier</string>
+    <string name="qualifier_navigation_key_availability">@string/fallback_no_qualifier</string>
+    <string name="navigation_key_availability">Navigation key availability</string>
+    <string name="qualifier_primary_nontouch_navigation_method">@string/fallback_no_qualifier</string>
+    <string name="primary_nontouch_navigation_method">Primary non-touch navigation method</string>
+    <string name="platform_version">Platform Version (API level)</string>
+    <string name="qualifier_platform_version">@string/fallback_no_qualifier</string>
+    <string name="locale">Locale</string>
+    <string name="mnc">MNC</string>
+    <string name="mcc">MCC</string>
 </resources>
