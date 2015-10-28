@@ -2,18 +2,14 @@ package com.roysolberg.android.developertools.ui.activity;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.NavUtils;
-import android.support.v7.widget.Toolbar;
-import android.transition.Explode;
+import android.support.v7.app.AppCompatActivity;
 import android.transition.Fade;
-import android.transition.Slide;
 import android.transition.Transition;
-import android.view.View;
 
 import com.roysolberg.android.developertools.R;
+import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
 
-public class ResourceQualifiersActivity extends FragmentActivity {
+public class ResourceQualifiersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +22,7 @@ public class ResourceQualifiersActivity extends FragmentActivity {
         }
 
         setContentView(R.layout.activity_resource_qualifiers);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(getString(R.string.resource_qualifiers));
-        toolbar.setNavigationIcon(R.drawable.tinted_arrow_left);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavUtils.navigateUpFromSameTask(ResourceQualifiersActivity.this);
-            }
-        });
+        getSupportFragmentManager().beginTransaction().add(R.id.scrollView, new ResourceQualifiersFragment()).commit();
     }
 
 }

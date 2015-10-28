@@ -50,9 +50,11 @@
     <string name="navigation_key_availability">Navigation key availability</string>
     <string name="qualifier_primary_nontouch_navigation_method">@string/fallback_no_qualifier</string>
     <string name="primary_nontouch_navigation_method">Primary non-touch navigation method</string>
-    <string name="platform_version">Platform Version (API level)</string>
+    <string name="platform_version">Platform version (API level)</string>
     <string name="qualifier_platform_version">@string/fallback_no_qualifier</string>
     <string name="locale">Locale</string>
     <string name="mnc">MNC</string>
     <string name="mcc">MCC</string>
+    <string name="collapse_view">Collapse view</string>
+    <string name="expand_view">Expand view</string>
 </resources>
