@@ -1,5 +1,6 @@
 package com.roysolberg.android.developertools.ui.fragment;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.roysolberg.android.developertools.AppSettings;
 import com.roysolberg.android.developertools.R;
@@ -31,6 +33,27 @@ public class ResourceQualifiersFragment extends Fragment {
             return inflater.inflate(R.layout.fragment_resource_qualifiers_collapsed, container, false);
         }
         return inflater.inflate(R.layout.fragment_resource_qualifiers_expanded, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        setUpManualResourceQualifiers(view);
+    }
+
+    private void setUpManualResourceQualifiers(View view) {
+        Configuration configuration = getResources().getConfiguration();
+        String mcc = getString(R.string.fallback_no_qualifier);
+        if(configuration.mcc != 0){
+            mcc = Integer.toString(configuration.mcc);
+        }
+        String mnc = getString(R.string.fallback_no_qualifier);
+        if(configuration.mnc != 0){
+            mnc = Integer.toString(configuration.mnc);
+        }
+        ((TextView)view.findViewById(R.id.textView_mcc)).setText(mcc);
+        ((TextView)view.findViewById(R.id.textView_mnc)).setText(mnc);
+        ((TextView)view.findViewById(R.id.textView_locale)).setText(configuration.locale.toString());
     }
 
     @Override

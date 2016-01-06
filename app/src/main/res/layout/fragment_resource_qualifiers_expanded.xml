@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -612,7 +613,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textView_mcc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -622,12 +623,14 @@
             android:paddingTop="16dp"
             android:singleLine="true"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+
+            android:textSize="16sp"
+            tools:text="242" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView13"
+            android:layout_below="@+id/textView_mcc"
             android:ellipsize="end"
             android:fontFamily="sans-serif"
             android:paddingBottom="16dp"
@@ -661,7 +664,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView_mnc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -671,12 +674,13 @@
             android:paddingTop="16dp"
             android:singleLine="true"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="2" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView14"
+            android:layout_below="@+id/textView_mnc"
             android:ellipsize="end"
             android:fontFamily="sans-serif"
             android:paddingBottom="16dp"
@@ -710,7 +714,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textView_locale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -720,12 +724,13 @@
             android:paddingTop="16dp"
             android:singleLine="true"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="nb_NO" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView15"
+            android:layout_below="@+id/textView_locale"
             android:ellipsize="end"
             android:fontFamily="sans-serif"
             android:paddingBottom="16dp"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -363,9 +364,10 @@
                 android:text="@string/mcc" />
 
             <TextView
-                android:id="@+id/textview_mcc"
+                android:id="@+id/textView_mcc"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:text="242" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -389,9 +391,10 @@
                 android:text="@string/mnc" />
 
             <TextView
-                android:id="@+id/textview_mnc"
+                android:id="@+id/textView_mnc"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:text="2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -415,9 +418,10 @@
                 android:text="@string/locale" />
 
             <TextView
-                android:id="@+id/textview_locale"
+                android:id="@+id/textView_locale"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:text="nb_NO" />
 
             <TextView
                 android:layout_width="wrap_content"
