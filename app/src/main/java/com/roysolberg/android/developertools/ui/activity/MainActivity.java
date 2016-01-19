@@ -25,6 +25,7 @@ import com.facebook.stetho.Stetho;
 import com.roysolberg.android.developertools.R;
 import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragment;
 import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
+import com.roysolberg.android.developertools.ui.fragment.SystemFeaturesFragment;
 
 // TODO: Extract strings
 public class MainActivity extends FragmentActivity {
@@ -94,6 +95,18 @@ public class MainActivity extends FragmentActivity {
                         startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
                     } else {
                         startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
+                    }
+                }
+                break;
+            case R.id.textView_system_features:
+                if (twoPaneMode) {
+                    ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new SystemFeaturesFragment()).commit();
+                } else {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        startActivity(new Intent(getApplicationContext(), SystemFeaturesActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+                    } else {
+                        startActivity(new Intent(getApplicationContext(), SystemFeaturesActivity.class));
                     }
                 }
                 break;

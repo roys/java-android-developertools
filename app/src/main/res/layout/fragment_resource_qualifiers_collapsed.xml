@@ -106,6 +106,7 @@
                 android:text="@string/layout_direction" />
 
             <TextView
+                android:id="@+id/textView_layout_direction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_layout_direction" />
@@ -212,7 +213,8 @@
                 android:layout_weight="1"
                 android:text="@string/screen_size" />
 
-            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            <TextView
+                android:id="@+id/textView_screen_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_screen_size" />
@@ -239,6 +241,7 @@
                 android:text="@string/screen_aspect" />
 
             <TextView
+                android:id="@+id/textView_screen_aspect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_screen_aspect" />
@@ -265,6 +268,7 @@
                 android:text="@string/round_screen" />
 
             <TextView
+                android:id="@+id/textView_round_screen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_round_screen" />
@@ -291,6 +295,7 @@
                 android:text="@string/screen_orientation" />
 
             <TextView
+                android:id="@+id/textView_screen_orientation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_screen_orientation" />
@@ -317,6 +322,7 @@
                 android:text="@string/ui_mode" />
 
             <TextView
+                android:id="@+id/textView_ui_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_ui_mode" />
@@ -343,6 +349,7 @@
                 android:text="@string/night_mode" />
 
             <TextView
+                android:id="@+id/textView_night_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_night_mode" />
@@ -369,6 +376,7 @@
                 android:text="@string/screen_pixel_density" />
 
             <TextView
+                android:id="@+id/textView_dpi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_screen_pixel_density" />
@@ -395,6 +403,7 @@
                 android:text="@string/touchscreen_type" />
 
             <TextView
+                android:id="@+id/textView_touchscreen_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_touchscreen_type" />
@@ -421,6 +430,7 @@
                 android:text="@string/keyboard_availability" />
 
             <TextView
+                android:id="@+id/textView_keyboard_availability"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_keyboard_availability" />
@@ -447,6 +457,7 @@
                 android:text="@string/primary_text_input_method" />
 
             <TextView
+                android:id="@+id/textView_primary_text_input_method"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_primary_text_input_method" />
@@ -473,6 +484,7 @@
                 android:text="@string/navigation_key_availability" />
 
             <TextView
+                android:id="@+id/textView_nav_key_availability"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_navigation_key_availability" />
@@ -499,6 +511,7 @@
                 android:text="@string/primary_nontouch_navigation_method" />
 
             <TextView
+                android:id="@+id/textView_primary_nontouch_nav_method"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_primary_nontouch_navigation_method" />
@@ -514,29 +527,6 @@
             android:layout_height="1dp"
             android:background="#555555" />
 
-        <!-- TODO: smallest width, available width, available height: -->
-        <!-- <TableRow -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" > -->
-        <!-- <TextView -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:text="Smallest width" -->
-        <!-- android:layout_weight="1" -->
-        <!-- /> -->
-        <!-- <TextView -->
-        <!-- android:id="@+id/textview_smallest_width" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- /> -->
-        <!-- <TextView -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:gravity="center_horizontal" -->
-        <!-- android:text="13" -->
-        <!-- /> -->
-        <!-- </TableRow> -->
-
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -548,6 +538,7 @@
                 android:text="@string/platform_version" />
 
             <TextView
+                android:id="@+id/textView_platform_version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qualifier_platform_version" />
