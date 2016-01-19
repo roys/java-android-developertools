@@ -52,9 +52,16 @@
     <string name="primary_nontouch_navigation_method">Primary non-touch navigation method</string>
     <string name="platform_version">Platform version (API level)</string>
     <string name="qualifier_platform_version">@string/fallback_no_qualifier</string>
-    <string name="locale">Locale</string>
-    <string name="mnc">MNC</string>
-    <string name="mcc">MCC</string>
+    <string name="qualifier_round_screen">@string/fallback_no_qualifier</string>
+    <string name="language_and_region">Language and region</string>
+    <string name="mcc_and_mnc">MCC and MNC</string>
     <string name="collapse_view">Collapse view</string>
     <string name="expand_view">Expand view</string>
+    <string name="share_configuration">Share configuration</string>
+    <string name="smallestWidth">smallestWidth</string>
+    <string name="api_level_13">API level 13</string>
+    <string name="available_width">Available width</string>
+    <string name="available_height">Available height</string>
+    <string name="api_level_23">API level 23</string>
+    <string name="round_screen">Round screen</string>
 </resources>

@@ -11,660 +11,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_screen_size"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView1"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/screen_size"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_4"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_screen_aspect"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/screen_aspect"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_4"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_screen_orientation"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView3"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/screen_orientation"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_layout_direction"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView4"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/layout_direction"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_17"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_ui_mode"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView5"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/ui_mode"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_8"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_night_mode"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView6"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/night_mode"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_8"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_screen_pixel_density"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView7"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/screen_pixel_density"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_touchscreen_type"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView8"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/touchscreen_type"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_keyboard_availability"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView9"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/keyboard_availability"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_primary_text_input_method"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView10"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/primary_text_input_method"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_navigation_key_availability"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView11"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/navigation_key_availability"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/qualifier_primary_nontouch_navigation_method"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView12"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/primary_nontouch_navigation_method"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView_mcc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:textColor="@color/primary_text"
-
-            android:textSize="16sp"
-            tools:text="242" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_mcc"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:text="@string/mcc"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:singleLine="true"
-            android:text="@string/api_level_1"
-            android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
-    </RelativeLayout>
-
-    <include layout="@layout/list_divider_text_only" />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView_mnc"
+            android:id="@+id/textView_mcc_and_mnc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -675,19 +22,19 @@
             android:singleLine="true"
             android:textColor="@color/primary_text"
             android:textSize="16sp"
-            tools:text="2" />
+            tools:text="mcc242-mnc02" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_mnc"
+            android:layout_below="@+id/textView_mcc_and_mnc"
             android:ellipsize="end"
             android:fontFamily="sans-serif"
             android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:singleLine="true"
-            android:text="@string/mnc"
+            android:text="@string/mcc_and_mnc"
             android:textColor="@color/secondary_text"
             android:textSize="14sp" />
 
@@ -725,7 +72,7 @@
             android:singleLine="true"
             android:textColor="@color/primary_text"
             android:textSize="16sp"
-            tools:text="nb_NO" />
+            tools:text="nb-rNO" />
 
         <TextView
             android:layout_width="match_parent"
@@ -737,7 +84,7 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:singleLine="true"
-            android:text="@string/locale"
+            android:text="@string/language_and_region"
             android:textColor="@color/secondary_text"
             android:textSize="14sp" />
 
@@ -764,7 +111,809 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textView_layout_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_layout_direction"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_layout_direction"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/layout_direction"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_17"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_smallest_width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            tools:text="sw320dp"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_smallest_width"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/smallestWidth"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_13"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_available_width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            tools:text="w320dp"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_available_width"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/available_width"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_13"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_available_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            tools:text="h640dp"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_available_height"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/available_height"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_13"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_screen_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_screen_size"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_screen_size"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/screen_size"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_4"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_screen_aspect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_screen_aspect"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_screen_aspect"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/screen_aspect"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_4"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_round_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_round_screen"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_round_screen"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/round_screen"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_23"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_screen_orientation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_screen_orientation"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_screen_orientation"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/screen_orientation"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_ui_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_ui_mode"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_ui_mode"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/ui_mode"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_8"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_night_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_night_mode"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_night_mode"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/night_mode"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_8"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_dpi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_screen_pixel_density"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_dpi"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/screen_pixel_density"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_touchscreen_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_touchscreen_type"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_touchscreen_type"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/touchscreen_type"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_keyboard_availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_keyboard_availability"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_keyboard_availability"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/keyboard_availability"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_primary_text_input_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_primary_text_input_method"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_primary_text_input_method"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/primary_text_input_method"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_nav_key_availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_navigation_key_availability"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_nav_key_availability"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/navigation_key_availability"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_primary_nontouch_nav_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_primary_nontouch_navigation_method"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_primary_nontouch_nav_method"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/primary_nontouch_navigation_method"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_1"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_platform_version"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -780,7 +929,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView16"
+            android:layout_below="@+id/textView_platform_version"
             android:ellipsize="end"
             android:fontFamily="sans-serif"
             android:paddingBottom="16dp"

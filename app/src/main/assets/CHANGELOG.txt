@@ -5,6 +5,9 @@ List of changes, newest changes first.
 
 Version 2.0.0
  * Total rewrite of app with Material Design.
+ + Added support for smallestWidth, available width, available height, round screen.
+ * Added proper values for MCC + MNC and language and region.
+ * Built and targeted with Android 6.0: Marshmallow (API level 23).
 Version 1.1.3
  + Added support for Android TV.
  - Removed link to Get Camera Parameters as the app is removed from Play Store.

@@ -1,9 +1,16 @@
 package com.roysolberg.android.developertools.ui.fragment;
 
+import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.telephony.TelephonyManager;
+import android.text.ClipboardManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -11,11 +18,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.roysolberg.android.developertools.AppSettings;
 import com.roysolberg.android.developertools.R;
+import com.roysolberg.android.developertools.util.Utils;
 
+import java.util.Locale;
+
+// TODO: I18N
 public class ResourceQualifiersFragment extends Fragment {
+
+    private final static String TAG = ResourceQualifiersFragment.class.getSimpleName();
+    private final static String TAG_CONFIG = "DeveloperTools";
 
     protected AppSettings appSettings;
 
@@ -29,31 +44,65 @@ public class ResourceQualifiersFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView;
         if (appSettings.showResourceQualifiersCollapsed()) {
-            return inflater.inflate(R.layout.fragment_resource_qualifiers_collapsed, container, false);
+            rootView = inflater.inflate(R.layout.fragment_resource_qualifiers_collapsed, container, false);
+        } else {
+            rootView = inflater.inflate(R.layout.fragment_resource_qualifiers_expanded, container, false);
         }
-        return inflater.inflate(R.layout.fragment_resource_qualifiers_expanded, container, false);
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        setUpManualResourceQualifiers(view);
+        setUpManualResourceQualifiers(rootView);
+        return rootView;
     }
 
     private void setUpManualResourceQualifiers(View view) {
-        Configuration configuration = getResources().getConfiguration();
-        String mcc = getString(R.string.fallback_no_qualifier);
-        if(configuration.mcc != 0){
-            mcc = Integer.toString(configuration.mcc);
+        final Configuration configuration = getResources().getConfiguration();
+
+        String mccAndMnc = getString(R.string.fallback_no_qualifier);
+        if (configuration.mcc != 0) { // NOTE: According to the docs, 0 if undefined, even though Wikipedia says 0 is used for test networks
+            mccAndMnc = "mcc" + String.format(Locale.US, "%03d", configuration.mcc); // Mobile country codes should always be 3 decimals, but can be prefixed with 0
+            mccAndMnc += "-mnc" + getBestGuessMobileNetworkCode(configuration);
         }
-        String mnc = getString(R.string.fallback_no_qualifier);
-        if(configuration.mnc != 0){
-            mnc = Integer.toString(configuration.mnc);
+        ((TextView) view.findViewById(R.id.textView_mcc_and_mnc)).setText(mccAndMnc);
+
+        ((TextView) view.findViewById(R.id.textView_locale)).setText(configuration.locale.getLanguage() + "-r" + configuration.locale.getCountry());
+
+        String smallestWidth = getString(R.string.fallback_no_qualifier);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
+            if (configuration.smallestScreenWidthDp != Configuration.SMALLEST_SCREEN_WIDTH_DP_UNDEFINED) {
+                smallestWidth = "sw" + configuration.smallestScreenWidthDp + "dp";
+            }
         }
-        ((TextView)view.findViewById(R.id.textView_mcc)).setText(mcc);
-        ((TextView)view.findViewById(R.id.textView_mnc)).setText(mnc);
-        ((TextView)view.findViewById(R.id.textView_locale)).setText(configuration.locale.toString());
+        ((TextView) view.findViewById(R.id.textView_smallest_width)).setText(smallestWidth);
+
+        String availableWidth = getString(R.string.fallback_no_qualifier);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
+            if (configuration.screenWidthDp != Configuration.SCREEN_WIDTH_DP_UNDEFINED) {
+                availableWidth = "w" + configuration.screenWidthDp + "dp";
+            }
+        }
+        ((TextView) view.findViewById(R.id.textView_available_width)).setText(availableWidth);
+
+        String availableHeight = getString(R.string.fallback_no_qualifier);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
+            if (configuration.screenHeightDp != Configuration.SCREEN_HEIGHT_DP_UNDEFINED) {
+                availableHeight = "h" + configuration.screenHeightDp + "dp";
+            }
+        }
+        ((TextView) view.findViewById(R.id.textView_available_height)).setText(availableHeight);
+    }
+
+    protected String getBestGuessMobileNetworkCode(Configuration configuration) {
+        TelephonyManager telephonyManager = (TelephonyManager) getActivity().getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
+        if (telephonyManager != null) {
+            if (telephonyManager.getSimState() == TelephonyManager.SIM_STATE_READY) {
+                String simOperator = telephonyManager.getSimOperator();
+                if (simOperator != null && simOperator.length() > 3) {
+                    return simOperator.substring(3);
+                }
+            }
+        }
+        Log.w(TAG, "Falling back to configuration's MNC which is missing info about any 0 prefixing. MNC is [" + configuration.mnc + "]");
+        return Integer.toString(configuration.mnc); // TODO: Should we warn the user that if the is number 10-99 it might have 0 prefixed and if the number is 0-9 it might have 0 or 00 prefixed?
     }
 
     @Override
@@ -80,8 +129,101 @@ public class ResourceQualifiersFragment extends Fragment {
                 appSettings.setShowResourceQualifiersCollapsed(false);
                 getFragmentManager().beginTransaction().replace(R.id.scrollView, new ResourceQualifiersFragment()).commit();
                 return true;
+            case R.id.item_share:
+                sendConfiguration(getConfiguration());
+                return true;
+            case R.id.item_log:
+                logConfiguration(getConfiguration());
+                return true;
+            case R.id.item_copy:
+                copyConfiguration(getConfiguration());
+                return true;
         }
         return false;
+    }
+
+    protected String getConfiguration() {
+        StringBuilder configuration = new StringBuilder();
+        configuration.append("MCC and MNC: ");
+        configuration.append(getTextFromTextView(R.id.textView_mcc_and_mnc));
+        configuration.append("\n");
+        configuration.append("Screen size: ");
+        configuration.append(getTextFromTextView(R.id.textView_screen_size));
+        configuration.append("\n");
+        configuration.append("Screen aspect: ");
+        configuration.append(getTextFromTextView(R.id.textView_screen_aspect));
+        configuration.append("\n");
+        configuration.append("Screen orientation: ");
+        configuration.append(getTextFromTextView(R.id.textView_screen_orientation));
+        configuration.append("\n");
+        configuration.append("Layout direction: ");
+        configuration.append(getTextFromTextView(R.id.textView_layout_direction));
+        configuration.append("\n");
+        configuration.append("UI mode: ");
+        configuration.append(getTextFromTextView(R.id.textView_ui_mode));
+        configuration.append("\n");
+        configuration.append("Night mode: ");
+        configuration.append(getTextFromTextView(R.id.textView_night_mode));
+        configuration.append("\n");
+        configuration.append("Screen pixel density: ");
+        configuration.append(getTextFromTextView(R.id.textView_dpi));
+        configuration.append("\n");
+        configuration.append("Touchscreen type: ");
+        configuration.append(getTextFromTextView(R.id.textView_touchscreen_type));
+        configuration.append("\n");
+        configuration.append("Keyboard availability: ");
+        configuration.append(getTextFromTextView(R.id.textView_keyboard_availability));
+        configuration.append("\n");
+        configuration.append("Primary text input method: ");
+        configuration.append(getTextFromTextView(R.id.textView_primary_text_input_method));
+        configuration.append("\n");
+        configuration.append("Navigation key availability: ");
+        configuration.append(getTextFromTextView(R.id.textView_nav_key_availability));
+        configuration.append("\n");
+        configuration.append("Primary non-touch navigation method: ");
+        configuration.append(getTextFromTextView(R.id.textView_primary_nontouch_nav_method));
+        configuration.append("\n");
+        configuration.append("Locale: ");
+        configuration.append(getTextFromTextView(R.id.textView_locale));
+        configuration.append("\n");
+        configuration.append("Platform version: ");
+        configuration.append(getTextFromTextView(R.id.textView_platform_version));
+        configuration.append("\n");
+        return configuration.toString();
+    }
+
+    protected CharSequence getTextFromTextView(int resourceId) {
+        return ((TextView) getView().findViewById(resourceId)).getText();
+    }
+
+    protected void sendConfiguration(String configuration) {
+        final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, ("Resource qualifiers collected by Developer Tools " + Utils.getVersion(getContext())));
+        emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, configuration);
+        try {
+            startActivity(emailIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(getContext(), "No activity found for sending e-mail.", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    protected void logConfiguration(String configuration) {
+        String[] configLines = configuration.split("\n");
+        for (String line : configLines) {
+            Log.i(TAG_CONFIG, line);
+        }
+        Toast.makeText(getContext(), "Resource qualifiers were written to log at log level INFO.", Toast.LENGTH_LONG).show();
+    }
+
+    protected void copyConfiguration(String configuration) {
+        ClipboardManager clipboardManager = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
+        if (clipboardManager != null) {
+            clipboardManager.setText(configuration);
+            Toast.makeText(getContext(), "Resource qualifiers copied to clipboard.", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getContext(), "Unable to get clipboard manager.", Toast.LENGTH_LONG).show();
+        }
     }
 
 }
