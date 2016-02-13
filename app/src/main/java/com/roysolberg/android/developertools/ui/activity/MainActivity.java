@@ -12,9 +12,7 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.Toolbar;
-import android.transition.Explode;
 import android.transition.Fade;
-import android.transition.Slide;
 import android.transition.Transition;
 import android.util.Log;
 import android.view.View;
@@ -25,6 +23,7 @@ import com.facebook.stetho.Stetho;
 import com.roysolberg.android.developertools.R;
 import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragment;
 import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
+import com.roysolberg.android.developertools.ui.fragment.ScreenDimensionsFragment;
 import com.roysolberg.android.developertools.ui.fragment.SystemFeaturesFragment;
 
 // TODO: Extract strings
@@ -110,6 +109,18 @@ public class MainActivity extends FragmentActivity {
                     }
                 }
                 break;
+            case R.id.textView_screen_dimensions:
+                if (twoPaneMode) {
+                    ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new ScreenDimensionsFragment()).commit();
+                } else {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        startActivity(new Intent(getApplicationContext(), ScreenDimensionsActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+                    } else {
+                        startActivity(new Intent(getApplicationContext(), ScreenDimensionsActivity.class));
+                    }
+                }
+                break;
             case R.id.textView_app_dalvik_explorer:
                 startApp(R.string.package_name_dalvik_explorer);
                 break;
@@ -159,7 +170,7 @@ public class MainActivity extends FragmentActivity {
                 aboutAppResId = R.string.about_alogcat;
                 break;
             case R.string.package_name_manifestviewer:
-                titleResId = R.string.dalvik_explorer;
+                titleResId = R.string.manifestviewer;
                 aboutAppResId = R.string.about_manifestviewer;
                 break;
             default:
