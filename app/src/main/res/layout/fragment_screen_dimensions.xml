@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_margin="0dp"
     android:orientation="vertical"
-    android:padding="0dp">
+    android:padding="0dp"
+    tools:ignore="TooManyViews">
 
     <TextView
         android:layout_width="wrap_content"
@@ -351,7 +353,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="InOrMmUsage">
 
         <View
             android:layout_width="1in"
@@ -678,12 +681,13 @@
         android:paddingRight="16dp"
         android:paddingTop="5dp"
         android:text="160px (pixels)"
-        android:textSize="22sp"></TextView>
+        android:textSize="22sp" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="PxUsage">
 
         <View
             android:layout_width="160px"

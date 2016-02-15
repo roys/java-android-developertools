@@ -28,7 +28,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.stetho.Stetho;
 import com.roysolberg.android.developertools.R;
 import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragment;
 import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
@@ -55,7 +54,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_main);
-        Stetho.initializeWithDefaults(this);
+        // TODO: Find a better solution for the icon - we have to manually remove it because of how we use the fragment manager and the other fragments.
+//        if (savedInstanceState == null) {
+//            ImageView logoImageView = new ImageView(getApplicationContext());
+//            logoImageView.setImageDrawable(getResources().getDrawable(R.drawable.collapsable_toolbar_icon));
+//            ((ScrollView) findViewById(R.id.layout_content)).addView(logoImageView);
+//        }
+        if (savedInstanceState != null) {
+            ViewGroup viewGroup = (ViewGroup) findViewById(R.id.layout_content);
+            if (viewGroup != null) {
+                viewGroup.removeAllViews();
+            }
+        }
 
 //        AppBarLayout appbarLayout = (AppBarLayout) findViewById(R.id.appBarLayout);
 //        CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) appbarLayout.getLayoutParams();
@@ -144,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onListItemClicked(View view) {
+        // TODO: Mark selected item in two pane mode
         switch (view.getId()) {
             case R.id.textView_resource_qualifiers:
                 if (twoPaneMode) {

@@ -6,9 +6,9 @@ android {
 
     defaultConfig {
         applicationId "com.roysolberg.android.developertools"
-        minSdkVersion 3
+        minSdkVersion 15
         targetSdkVersion 23
-        versionCode 50
+        versionCode 51
         versionName "2.0.0"
     }
     buildTypes {
@@ -23,5 +23,4 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:recyclerview-v7:23.1.1'
-    compile 'com.facebook.stetho:stetho:1.2.0'
 }

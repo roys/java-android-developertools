@@ -1,5 +1,6 @@
 package com.roysolberg.android.developertools;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -25,6 +26,7 @@ public class AppSettings {
         return appSettings;
     }
 
+    @SuppressLint("CommitPrefEdits")
     protected Editor getEditor() {
         if (editor == null) {
             editor = sharedPreferences.edit();
