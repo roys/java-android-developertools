@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             toolbar.setTitle(getString(R.string.app_name));
 
         } else { // Not two pane
-            if (sdkVersion > 10) { // TODO: The collapsing toolbar and nested scroll view and stuff hardly worked on Xperia X10 (2.3.3/9) and Nexus One (2.3.6/10), any chance to get it to work?
+            if (sdkVersion > 7) { // TODO: The collapsing toolbar and nested scroll view and stuff hardly worked on Xperia X10 (2.3.3/9) and Nexus One (2.3.6/10), any chance to get it to work?
                 ((CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout)).setTitle(getString(R.string.app_name));
             } else {
                 toolbar.setTitle(getString(R.string.app_name));
