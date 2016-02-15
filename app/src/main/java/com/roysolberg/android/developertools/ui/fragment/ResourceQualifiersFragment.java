@@ -120,14 +120,15 @@ public class ResourceQualifiersFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        int layoutIdToReplace = getActivity().findViewById(R.id.scrollView) == null ? R.id.layout_content : R.id.scrollView;
         switch (item.getItemId()) {
             case R.id.item_collapse:
                 appSettings.setShowResourceQualifiersCollapsed(true);
-                getFragmentManager().beginTransaction().replace(R.id.scrollView, new ResourceQualifiersFragment()).commit();
+                getFragmentManager().beginTransaction().replace(layoutIdToReplace, new ResourceQualifiersFragment()).commit();
                 return true;
             case R.id.item_expand:
                 appSettings.setShowResourceQualifiersCollapsed(false);
-                getFragmentManager().beginTransaction().replace(R.id.scrollView, new ResourceQualifiersFragment()).commit();
+                getFragmentManager().beginTransaction().replace(layoutIdToReplace, new ResourceQualifiersFragment()).commit();
                 return true;
             case R.id.item_share:
                 sendConfiguration(getConfiguration());
@@ -144,6 +145,7 @@ public class ResourceQualifiersFragment extends Fragment {
 
     protected String getConfiguration() {
         StringBuilder configuration = new StringBuilder();
+        configuration.append("Device: ").append(Utils.getDeviceSummary()).append("\n");
         configuration.append(getString(R.string.mcc_and_mnc));
         configuration.append(": ");
         configuration.append(getTextFromTextView(R.id.textView_mcc_and_mnc));

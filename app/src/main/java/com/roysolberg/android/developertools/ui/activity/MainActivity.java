@@ -3,20 +3,29 @@ package com.roysolberg.android.developertools.ui.activity;
 import android.annotation.TargetApi;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.transition.Fade;
 import android.transition.Transition;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.stetho.Stetho;
@@ -25,9 +34,10 @@ import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragmen
 import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
 import com.roysolberg.android.developertools.ui.fragment.ScreenDimensionsFragment;
 import com.roysolberg.android.developertools.ui.fragment.SystemFeaturesFragment;
+import com.roysolberg.android.developertools.util.Utils;
 
 // TODO: Extract strings
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -60,26 +70,76 @@ public class MainActivity extends FragmentActivity {
             /* no-op */
         }
 
+        Toolbar toolbar = ((Toolbar) findViewById(R.id.toolbar));
         if (findViewById(R.id.layout_content) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-large and
             // res/values-sw600dp). If this view is present, then the
             // activity should be in two-pane mode.
             twoPaneMode = true;
-
-            ((Toolbar) findViewById(R.id.toolbar)).setTitle(getString(R.string.app_name));
+            toolbar.setTitle(getString(R.string.app_name));
 
         } else { // Not two pane
             if (sdkVersion > 10) { // TODO: The collapsing toolbar and nested scroll view and stuff hardly worked on Xperia X10 (2.3.3/9) and Nexus One (2.3.6/10), any chance to get it to work?
                 ((CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout)).setTitle(getString(R.string.app_name));
             } else {
-                ((Toolbar) findViewById(R.id.toolbar)).setTitle(getString(R.string.app_name));
+                toolbar.setTitle(getString(R.string.app_name));
             }
         }
+        setSupportActionBar(toolbar);
 
         if (sdkVersion >= 18 && sdkVersion <= 19) { // Android 4.3-4.4
             findViewById(R.id.textView_settings_permissions).setVisibility(View.VISIBLE);
             findViewById(R.id.include_list_divider).setVisibility(View.VISIBLE);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.item_about_app:
+                showAboutAppDialog();
+                return true;
+        }
+        return false;
+    }
+
+    protected void showAboutAppDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        final SpannableString spannableString = new SpannableString("This app was originally just created for myself to make some developement tasks a bit easier. I've released it to Play Store hoping that someone else might find it useful.\n\nIf you want to get in touch me, please send me a mail at dev@roysolberg.com.\n\nPlease note that I take no credit for the third party apps.");
+        Linkify.addLinks(spannableString, Linkify.ALL);
+        builder.setTitle("Developer Tools " + Utils.getVersion(getApplicationContext()))
+                .setIcon(R.mipmap.ic_launcher)
+                .setMessage(spannableString)
+                .setCancelable(true)
+                .setPositiveButton("Ok, thanks", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                })
+                .setNeutralButton("Rate at Play Store", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse("market://details?id=" + getApplicationContext().getPackageName()));
+                        try {
+                            startActivity(intent);
+                        } catch (ActivityNotFoundException e) {
+                            Toast.makeText(getApplicationContext(), "No app found for opening Play Store URL.", Toast.LENGTH_LONG).show();
+                        }
+                        dialog.dismiss();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        TextView messageTextView = ((TextView) alertDialog.findViewById(android.R.id.message));
+        if (messageTextView != null) {
+            messageTextView.setMovementMethod(LinkMovementMethod.getInstance());
         }
     }
 

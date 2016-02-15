@@ -73,7 +73,7 @@ public class SystemFeaturesFragment extends Fragment {
         }
         this.systemFeatures = systemFeatures.toString();
         systemFeaturesTextView.setText(this.systemFeatures);
-
+        this.systemFeatures = "Device: " + Utils.getDeviceSummary() + "\n" + this.systemFeatures;
     }
 
     @Override
@@ -81,7 +81,6 @@ public class SystemFeaturesFragment extends Fragment {
         inflater.inflate(R.menu.menu_system_features, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
