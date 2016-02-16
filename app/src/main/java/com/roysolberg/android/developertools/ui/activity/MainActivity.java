@@ -10,7 +10,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -18,8 +17,6 @@ import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
-import android.transition.Fade;
-import android.transition.Transition;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -46,12 +43,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Transition transition = new Fade();
-            getWindow().setExitTransition(transition);
-            getWindow().setReenterTransition(transition);
-        }
 
         setContentView(R.layout.activity_main);
         // TODO: Find a better solution for the icon - we have to manually remove it because of how we use the fragment manager and the other fragments.
@@ -161,11 +152,7 @@ public class MainActivity extends AppCompatActivity {
                     ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
                     getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new ResourceQualifiersFragment()).commit();
                 } else {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                        startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
-                    } else {
-                        startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
-                    }
+                    startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
                 }
                 break;
             case R.id.textView_system_features:
@@ -173,11 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
                     getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new SystemFeaturesFragment()).commit();
                 } else {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                        startActivity(new Intent(getApplicationContext(), SystemFeaturesActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
-                    } else {
-                        startActivity(new Intent(getApplicationContext(), SystemFeaturesActivity.class));
-                    }
+                    startActivity(new Intent(getApplicationContext(), SystemFeaturesActivity.class));
                 }
                 break;
             case R.id.textView_screen_dimensions:
@@ -185,11 +168,7 @@ public class MainActivity extends AppCompatActivity {
                     ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
                     getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new ScreenDimensionsFragment()).commit();
                 } else {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                        startActivity(new Intent(getApplicationContext(), ScreenDimensionsActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
-                    } else {
-                        startActivity(new Intent(getApplicationContext(), ScreenDimensionsActivity.class));
-                    }
+                    startActivity(new Intent(getApplicationContext(), ScreenDimensionsActivity.class));
                 }
                 break;
             case R.id.textView_app_dalvik_explorer:

@@ -3,6 +3,8 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.0.1
+ * Removed Activity transitions because of mysterious stack traces reported.
 Version 2.0.0
  * Total rewrite of app with Material Design.
  + Added support for smallestWidth, available width, available height, round screen.
