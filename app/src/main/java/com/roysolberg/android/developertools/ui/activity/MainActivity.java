@@ -33,6 +33,7 @@ import com.roysolberg.android.developertools.ui.fragment.SystemFeaturesFragment;
 import com.roysolberg.android.developertools.util.Utils;
 
 // TODO: Extract strings
+// TODO: Add utm_source to links to Play Store
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -208,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void showInstallAppDialog(int packageNameResId) {
+        // TODO: Add link to Clean Status Bar? Or is it out of scope?
         int titleResId, aboutAppResId;
         switch (packageNameResId) {
             case R.string.package_name_dalvik_explorer:
