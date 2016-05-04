@@ -1,6 +1,5 @@
 # Developer Tools for Android
-## What it is
-*Developer Tools* is a utility app for Android developers.
+__*Developer Tools* is a utility app for Android developers.__
 
 ## Download
 You can install the app from Play Store at [https://play.google.com/store/apps/details?id=com.roysolberg.android.developertools](https://play.google.com/store/apps/details?id=com.roysolberg.android.developertools&referrer=utm_source%3Dgithub%26utm_medium%3Dreadme).
