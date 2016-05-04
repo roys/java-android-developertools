@@ -5,7 +5,7 @@
 ## Play Store
 You can install the app from Play Store at https://play.google.com/store/apps/details?id=com.roysolberg.android.developertools .
 
-![Screenshot #1](https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-19-28.png "The main screen.")
+![Screenshot #1](https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-19-28.png "The main screen."){: width=200px}
 
 ## More details
 This app was originally just created for myself to make some development tasks a bit easier. I've released it to the app store hoping that someone else might find it useful too.
