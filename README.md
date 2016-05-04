@@ -5,7 +5,7 @@
 ## Download
 You can install the app from Play Store at https://play.google.com/store/apps/details?id=com.roysolberg.android.developertools .
 
-If you want to download the APK outside Play Store you can find all releases in the [misc/releases](misc/releases) directory.
+If you want to download the APK outside Play Store you can [find all releases in the misc/releases](misc/releases) directory.
 
 <img src="https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-19-28.png" width="220"/>
 <img src="https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-20-07.png" width="220"/>
@@ -29,3 +29,9 @@ Also I wanted to create an app where everything I needed was just one click away
 *Developer Tools* works for Android 1.5 and up (though the version 2.0 here on github currently only supports API level 10+). The app doesn't need any permissions to run.
 
 Please give me a word if there's something you'd like to see included in this app. :)
+
+## Changelog
+[A changelog is included in the project.](app/src/main/assets/CHANGELOG.txt)
+
+## Bugs
+Please report any bugs to me. If the app are to crash, please submit a bug as I don't have INTERNET (or any other) permissions and can't use any third party tools to get crash reports and stack traces.
