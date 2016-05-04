@@ -30,8 +30,8 @@ Also I wanted to create an app where everything I needed was just one click away
 
 Please give me a word if there's something you'd like to see included in this app. :)
 
-## Changelog
-[A changelog is included in the project.](app/src/main/assets/CHANGELOG.txt)
+## Changes
+[A change log is included in the project.](app/src/main/assets/CHANGELOG.txt)
 
 ## Bugs
-Please report any bugs to me. If the app are to crash, please submit a bug as I don't have INTERNET (or any other) permissions and can't use any third party tools to get crash reports and stack traces.
+Please report any bugs to me. If the app are to crash, please submit a bug report to Play Store as I don't have INTERNET (or any other) permissions and therefore can't use any third party tools to get crash reports and stack traces.
