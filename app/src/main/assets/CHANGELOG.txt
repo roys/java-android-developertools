@@ -3,6 +3,10 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.0.3
+ * Build and targeted with Android 7.0: Nougat (API level 24).
+ * Lib updates.
+ * Bugfix: Left side menu wasn't scrollable for tablets and Android TV and other wide screens.
 Version 2.0.2
  * Rebuild app with logo without the letter "a" from Android's custom typeface after Google's removal of the app.
  * Lib updates.
