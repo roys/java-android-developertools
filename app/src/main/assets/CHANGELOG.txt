@@ -3,6 +3,8 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.0.4
+ * Rebuild without requirement for touch screen.
 Version 2.0.3
  * Build and targeted with Android 7.0: Nougat (API level 24).
  * Lib updates.
