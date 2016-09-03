@@ -3,6 +3,8 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.0.6
+ + Added banner to be able to make it available for Android TV in Play Store.
 Version 2.0.5
  + Added declaration for leanback (Android TV) support.
 Version 2.0.4
