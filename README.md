@@ -6,6 +6,9 @@ You can install the app from Play Store at [https://play.google.com/store/apps/d
 
 If you want to download the APK outside Play Store you can [find all releases in the misc/releases](misc/releases) directory.
 
+### Android 1.5 - Android 2.3.2
+If you want to download the APK for Android before version 2.3.3 please pick the version 1 APK in the [the misc/releases](misc/releases) directory.
+
 <img src="https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-19-28.png" width="220"/>
 <img src="https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-20-07.png" width="220"/>
 <img src="https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-20-29.png" width="220"/>
