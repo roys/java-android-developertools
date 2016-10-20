@@ -4,10 +4,10 @@ __*Developer Tools* is a utility app for Android developers.__
 ## Download
 You can install the app from Play Store at [https://play.google.com/store/apps/details?id=com.roysolberg.android.developertools](https://play.google.com/store/apps/details?id=com.roysolberg.android.developertools&referrer=utm_source%3Dgithub-roys%26utm_medium%3Dreadme%26utm_campaign%3Dreadme).
 
-If you want to download the APK outside Play Store you can [find all releases in the misc/releases](misc/releases) directory.
+If you want to download the APK outside Play Store you can [find all releases in the misc/releases directory](misc/releases).
 
 ### Android 1.5 - Android 2.3.2 (API level 3 - 9)
-If you want to download the APK outside Play Store for Android before version 2.3.3 please pick the version 1 APK in the [the misc/releases](misc/releases) directory. The version 2 will not run on those devices.
+If you want to download the APK outside Play Store for Android before version 2.3.3 please pick the version 1 APK in the [the misc/releases directory](misc/releases). The version 2 will not run on those devices.
 
 <img src="https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-19-28.png" width="220"/>
 <img src="https://github.com/roys/java-android-developertools/raw/master/misc/screenshots/Screenshot_2016-04-21-23-20-07.png" width="220"/>

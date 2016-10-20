@@ -34,6 +34,9 @@ import com.roysolberg.android.developertools.util.Utils;
 
 // TODO: Extract strings
 // TODO: Add utm_source to links to Play Store
+// TODO: Link to ADB Wireless?
+// TODO: Link to https://android.googlesource.com/platform/packages/apps/Settings/+/android-6.0.1_r68/AndroidManifest.xml#1082 ?
+// TODO: Add link to new AppOps (https://android.googlesource.com/platform/packages/apps/Settings/+/android-6.0.1_r68/AndroidManifest.xml#1214 / PRIVACY_SETTINGS)
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         // TODO: Find a better solution for the icon - we have to manually remove it because of how we use the fragment manager and the other fragments.
 //        if (savedInstanceState == null) {
 //            ImageView logoImageView = new ImageView(getApplicationContext());
-//            logoImageView.setImageDrawable(getResources().getDrawable(R.drawable.collapsable_toolbar_icon));
+//            logoImageView.eetImageDrawable(getResources().getDrawable(R.drawable.collapsable_toolbar_icon));
 //            ((ScrollView) findViewById(R.id.layout_content)).addView(logoImageView);
 //        }
         if (savedInstanceState != null) {

@@ -3,6 +3,9 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.0.7
+ * Built and targeted with Android 7.1: Nougat MR1 (API level 25).
+ * App can now be moved to SD card ("external location" is set as preferred).
 Version 2.0.6
  + Added banner to be able to make it available for Android TV in Play Store.
 Version 2.0.5

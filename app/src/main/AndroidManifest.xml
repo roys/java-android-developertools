@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.roysolberg.android.developertools">
+          package="com.roysolberg.android.developertools"
+          android:installLocation="preferExternal"
+    >
 
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
