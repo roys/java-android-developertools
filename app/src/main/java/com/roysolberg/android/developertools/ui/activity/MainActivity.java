@@ -37,6 +37,7 @@ import com.roysolberg.android.developertools.util.Utils;
 // TODO: Link to ADB Wireless?
 // TODO: Link to https://android.googlesource.com/platform/packages/apps/Settings/+/android-6.0.1_r68/AndroidManifest.xml#1082 ?
 // TODO: Add link to new AppOps (https://android.googlesource.com/platform/packages/apps/Settings/+/android-6.0.1_r68/AndroidManifest.xml#1214 / PRIVACY_SETTINGS)
+// TODO: Move app links from layout to some config xml
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -96,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
         if (sdkVersion >= 18 && sdkVersion <= 19) { // Android 4.3-4.4
             findViewById(R.id.textView_settings_permissions).setVisibility(View.VISIBLE);
             findViewById(R.id.include_list_divider).setVisibility(View.VISIBLE);
+        }
+        if (sdkVersion < 15) {
+            findViewById(R.id.textView_app_cleanStatusBar).setVisibility(View.GONE);
+            findViewById(R.id.include_list_divider_clean_status_bar).setVisibility(View.GONE);
         }
     }
 
@@ -184,6 +189,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.textView_app_manifestviewer:
                 startApp(R.string.package_name_manifestviewer);
                 break;
+            case R.id.textView_app_cleanStatusBar:
+                startApp(R.string.package_name_clean_status_bar);
+                break;
             case R.id.textView_settings_development:
                 startDevelopmentSettingsActivity();
                 break;
@@ -227,6 +235,10 @@ public class MainActivity extends AppCompatActivity {
             case R.string.package_name_manifestviewer:
                 titleResId = R.string.manifestviewer;
                 aboutAppResId = R.string.about_manifestviewer;
+                break;
+            case R.string.package_name_clean_status_bar:
+                titleResId = R.string.clean_status_bar;
+                aboutAppResId = R.string.about_clean_status_bar;
                 break;
             default:
                 throw new IllegalArgumentException("Unknown app with package name [" + getString(packageNameResId) + "]. Unable to show install dialog.");

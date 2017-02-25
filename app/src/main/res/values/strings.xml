@@ -17,10 +17,12 @@
     <string name="about_dalvik_explorer">Dalvik Explorer is an excellent app by Elliott Hughes that displays Java system properties, environment variables, and more.\n\nYou can download it from Play Store.</string>
     <string name="about_alogcat">aLogcat is a great Android system log file reader by Jeffrey Blattman.\n\nYou can download it from Play Store.\n\nPlease consider his donate version if you find it useful.</string>
     <string name="about_manifestviewer">ManifestViewer is a great way to get information about installed apps\' AndroidManifest.xml, including intent filters and permissions.\n\nThe app is created by susatthi and you can download it from Play Store.</string>
+    <string name="about_clean_status_bar">Clean Status Bar is *the* app to use when taking screenshots of your apps.\n\nUsing this app you get professional screenshots to use in Play Store and presentations.\n\nThe app is created by Emma Guy. It\'s available as open source and in Play Store.</string>
     <string name="package_name_dalvik_explorer">org.jessies.dalvikexplorer</string>
     <string name="package_name_alogcat">org.jtb.alogcat.donate</string>
     <string name="package_name_alogcat_free">org.jtb.alogcat</string>
     <string name="package_name_manifestviewer">jp.susatthi.ManifestViewer</string>
+    <string name="package_name_clean_status_bar">com.emmaguy.cleanstatusbar</string>
     <string name="fallback_no_qualifier">Fallback (no qualifier)</string>
     <string name="qualifier_screen_size">@string/fallback_no_qualifier</string>
     <string name="screen_size">Screen size</string>
@@ -65,4 +67,5 @@
     <string name="api_level_23">API level 23</string>
     <string name="round_screen">Round screen</string>
     <string name="about_app">About app</string>
+    <string name="clean_status_bar">Clean Status Bar</string>
 </resources>
