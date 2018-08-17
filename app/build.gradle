@@ -8,8 +8,8 @@ android {
         applicationId "com.roysolberg.android.developertools"
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 65
-        versionName "2.1.0.develop"
+        versionCode 66
+        versionName "2.0.10.develop"
     }
     buildTypes {
         release {

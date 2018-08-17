@@ -12,7 +12,7 @@ public class Utils {
         String version = "";
         if (packageManager != null) {
             try {
-                PackageInfo packageInfo = packageManager.getPackageInfo(context.getPackageName(), -1);
+                PackageInfo packageInfo = packageManager.getPackageInfo(context.getPackageName(), 0);
                 version = packageInfo.versionName;
             } catch (PackageManager.NameNotFoundException e) {
                 /* no-op */
