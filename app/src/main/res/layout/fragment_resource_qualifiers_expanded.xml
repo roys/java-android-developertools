@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:ignore="RelativeOverlap"
-    android:paddingBottom="8dp">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              tools:ignore="RelativeOverlap">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -23,7 +23,7 @@
             android:singleLine="true"
             android:textColor="@color/primary_text"
             android:textSize="16sp"
-            tools:text="mcc242-mnc02" />
+            tools:text="mcc242-mnc02"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             android:singleLine="true"
             android:text="@string/mcc_and_mnc"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,10 +52,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -73,7 +73,7 @@
             android:singleLine="true"
             android:textColor="@color/primary_text"
             android:textSize="16sp"
-            tools:text="nb-rNO" />
+            tools:text="nb-rNO"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -87,7 +87,7 @@
             android:singleLine="true"
             android:text="@string/language_and_region"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -102,10 +102,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -123,7 +123,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_layout_direction"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -137,7 +137,7 @@
             android:singleLine="true"
             android:text="@string/layout_direction"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -152,10 +152,10 @@
             android:singleLine="true"
             android:text="@string/api_level_17"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -171,9 +171,9 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp"
             android:singleLine="true"
-            tools:text="sw320dp"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="sw320dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -187,7 +187,7 @@
             android:singleLine="true"
             android:text="@string/smallestWidth"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -202,10 +202,10 @@
             android:singleLine="true"
             android:text="@string/api_level_13"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -221,9 +221,9 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp"
             android:singleLine="true"
-            tools:text="w320dp"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="w320dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -237,7 +237,7 @@
             android:singleLine="true"
             android:text="@string/available_width"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -252,10 +252,10 @@
             android:singleLine="true"
             android:text="@string/api_level_13"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -271,9 +271,9 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp"
             android:singleLine="true"
-            tools:text="h640dp"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="h640dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -287,7 +287,7 @@
             android:singleLine="true"
             android:text="@string/available_height"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -302,10 +302,10 @@
             android:singleLine="true"
             android:text="@string/api_level_13"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -324,7 +324,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_screen_size"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -338,7 +338,7 @@
             android:singleLine="true"
             android:text="@string/screen_size"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -353,11 +353,11 @@
             android:singleLine="true"
             android:text="@string/api_level_4"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
 
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -375,7 +375,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_screen_aspect"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -389,7 +389,7 @@
             android:singleLine="true"
             android:text="@string/screen_aspect"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -404,10 +404,10 @@
             android:singleLine="true"
             android:text="@string/api_level_4"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -425,7 +425,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_round_screen"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -439,7 +439,7 @@
             android:singleLine="true"
             android:text="@string/round_screen"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -454,10 +454,110 @@
             android:singleLine="true"
             android:text="@string/api_level_23"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_wide_color_gamut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_wide_color_gamut"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_wide_color_gamut"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/wide_color_gamut"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_26"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_hdr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/qualifier_hdr"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_hdr"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/hdr"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="@string/api_level_26"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -475,7 +575,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_screen_orientation"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -489,7 +589,7 @@
             android:singleLine="true"
             android:text="@string/screen_orientation"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -504,10 +604,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -525,7 +625,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_ui_mode"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -539,7 +639,7 @@
             android:singleLine="true"
             android:text="@string/ui_mode"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -554,10 +654,10 @@
             android:singleLine="true"
             android:text="@string/api_level_8"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -575,7 +675,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_night_mode"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -589,7 +689,7 @@
             android:singleLine="true"
             android:text="@string/night_mode"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -604,10 +704,10 @@
             android:singleLine="true"
             android:text="@string/api_level_8"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -625,7 +725,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_screen_pixel_density"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -639,7 +739,7 @@
             android:singleLine="true"
             android:text="@string/screen_pixel_density"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -654,10 +754,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -675,7 +775,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_touchscreen_type"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -689,7 +789,7 @@
             android:singleLine="true"
             android:text="@string/touchscreen_type"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -704,10 +804,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -725,7 +825,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_keyboard_availability"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -739,7 +839,7 @@
             android:singleLine="true"
             android:text="@string/keyboard_availability"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -754,10 +854,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -775,7 +875,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_primary_text_input_method"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -789,7 +889,7 @@
             android:singleLine="true"
             android:text="@string/primary_text_input_method"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -804,10 +904,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -825,7 +925,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_navigation_key_availability"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -839,7 +939,7 @@
             android:singleLine="true"
             android:text="@string/navigation_key_availability"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -854,10 +954,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -875,7 +975,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_primary_nontouch_navigation_method"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -889,7 +989,7 @@
             android:singleLine="true"
             android:text="@string/primary_nontouch_navigation_method"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -904,10 +1004,10 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -925,7 +1025,7 @@
             android:singleLine="true"
             android:text="@string/qualifier_platform_version"
             android:textColor="@color/primary_text"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -939,7 +1039,7 @@
             android:singleLine="true"
             android:text="@string/platform_version"
             android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -954,9 +1054,9 @@
             android:singleLine="true"
             android:text="@string/api_level_1"
             android:textColor="@color/secondary_text"
-            android:textSize="13sp" />
+            android:textSize="13sp"/>
     </RelativeLayout>
 
-    <include layout="@layout/list_divider_text_only" />
+    <include layout="@layout/list_divider_text_only"/>
 
 </LinearLayout>

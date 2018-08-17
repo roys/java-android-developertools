@@ -182,6 +182,14 @@ public class ResourceQualifiersFragment extends Fragment {
         configuration.append(": ");
         configuration.append(getTextFromTextView(R.id.textView_round_screen));
         configuration.append("\n");
+        configuration.append(getString(R.string.wide_color_gamut));
+        configuration.append(": ");
+        configuration.append(getTextFromTextView(R.id.textView_wide_color_gamut));
+        configuration.append("\n");
+        configuration.append(getString(R.string.hdr));
+        configuration.append(": ");
+        configuration.append(getTextFromTextView(R.id.textView_hdr));
+        configuration.append("\n");
         configuration.append(getString(R.string.screen_orientation));
         configuration.append(": ");
         configuration.append(getTextFromTextView(R.id.textView_screen_orientation));

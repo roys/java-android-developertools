@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:paddingLeft="2dp"
-    android:paddingRight="2dp">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="2dp"
+              android:paddingRight="2dp">
 
     <TableLayout
         android:layout_width="fill_parent"
@@ -22,24 +22,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Configuration"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Qualifier value"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="API level"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -49,24 +49,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/mcc_and_mnc" />
+                android:text="@string/mcc_and_mnc"/>
 
             <TextView
                 android:id="@+id/textView_mcc_and_mnc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="mcc242-mnc2" />
+                tools:text="mcc242-mnc2"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -76,24 +76,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/language_and_region" />
+                android:text="@string/language_and_region"/>
 
             <TextView
                 android:id="@+id/textView_locale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="nb_NO" />
+                tools:text="nb_NO"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -103,24 +103,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/layout_direction" />
+                android:text="@string/layout_direction"/>
 
             <TextView
                 android:id="@+id/textView_layout_direction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_layout_direction" />
+                android:text="@string/qualifier_layout_direction"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="17" />
+                android:text="17"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -130,24 +130,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/smallestWidth" />
+                android:text="@string/smallestWidth"/>
 
             <TextView
                 android:id="@+id/textView_smallest_width"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="sw240dp" />
+                tools:text="sw240dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="13" />
+                android:text="13"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -157,24 +157,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/available_width" />
+                android:text="@string/available_width"/>
 
             <TextView
                 android:id="@+id/textView_available_width"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="w240dp" />
+                tools:text="w240dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="13" />
+                android:text="13"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -184,24 +184,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/available_height" />
+                android:text="@string/available_height"/>
 
             <TextView
                 android:id="@+id/textView_available_height"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="h640dp" />
+                tools:text="h640dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="13" />
+                android:text="13"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -211,24 +211,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/screen_size" />
+                android:text="@string/screen_size"/>
 
             <TextView
                 android:id="@+id/textView_screen_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_screen_size" />
+                android:text="@string/qualifier_screen_size"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="4" />
+                android:text="4"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -238,24 +238,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/screen_aspect" />
+                android:text="@string/screen_aspect"/>
 
             <TextView
                 android:id="@+id/textView_screen_aspect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_screen_aspect" />
+                android:text="@string/qualifier_screen_aspect"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="4" />
+                android:text="4"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -265,24 +265,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/round_screen" />
+                android:text="@string/round_screen"/>
 
             <TextView
                 android:id="@+id/textView_round_screen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_round_screen" />
+                android:text="@string/qualifier_round_screen"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="23" />
+                android:text="23"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -292,24 +292,78 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/screen_orientation" />
+                android:text="@string/wide_color_gamut"/>
+
+            <TextView
+                android:id="@+id/textView_wide_color_gamut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qualifier_wide_color_gamut"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="26"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#555555"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hdr"/>
+
+            <TextView
+                android:id="@+id/textView_hdr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qualifier_hdr"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="26"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#555555"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/screen_orientation"/>
 
             <TextView
                 android:id="@+id/textView_screen_orientation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_screen_orientation" />
+                android:text="@string/qualifier_screen_orientation"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -319,24 +373,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/ui_mode" />
+                android:text="@string/ui_mode"/>
 
             <TextView
                 android:id="@+id/textView_ui_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_ui_mode" />
+                android:text="@string/qualifier_ui_mode"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="8" />
+                android:text="8"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -346,24 +400,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/night_mode" />
+                android:text="@string/night_mode"/>
 
             <TextView
                 android:id="@+id/textView_night_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_night_mode" />
+                android:text="@string/qualifier_night_mode"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="8" />
+                android:text="8"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -373,24 +427,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/screen_pixel_density" />
+                android:text="@string/screen_pixel_density"/>
 
             <TextView
                 android:id="@+id/textView_dpi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_screen_pixel_density" />
+                android:text="@string/qualifier_screen_pixel_density"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -400,24 +454,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/touchscreen_type" />
+                android:text="@string/touchscreen_type"/>
 
             <TextView
                 android:id="@+id/textView_touchscreen_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_touchscreen_type" />
+                android:text="@string/qualifier_touchscreen_type"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -427,24 +481,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/keyboard_availability" />
+                android:text="@string/keyboard_availability"/>
 
             <TextView
                 android:id="@+id/textView_keyboard_availability"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_keyboard_availability" />
+                android:text="@string/qualifier_keyboard_availability"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -454,24 +508,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/primary_text_input_method" />
+                android:text="@string/primary_text_input_method"/>
 
             <TextView
                 android:id="@+id/textView_primary_text_input_method"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_primary_text_input_method" />
+                android:text="@string/qualifier_primary_text_input_method"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -481,24 +535,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/navigation_key_availability" />
+                android:text="@string/navigation_key_availability"/>
 
             <TextView
                 android:id="@+id/textView_nav_key_availability"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_navigation_key_availability" />
+                android:text="@string/qualifier_navigation_key_availability"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -508,24 +562,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/primary_nontouch_navigation_method" />
+                android:text="@string/primary_nontouch_navigation_method"/>
 
             <TextView
                 android:id="@+id/textView_primary_nontouch_nav_method"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_primary_nontouch_navigation_method" />
+                android:text="@string/qualifier_primary_nontouch_navigation_method"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
 
         <TableRow
             android:layout_width="wrap_content"
@@ -535,23 +589,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/platform_version" />
+                android:text="@string/platform_version"/>
 
             <TextView
                 android:id="@+id/textView_platform_version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/qualifier_platform_version" />
+                android:text="@string/qualifier_platform_version"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="1" />
+                android:text="1"/>
         </TableRow>
 
         <View
             android:layout_height="1dp"
-            android:background="#555555" />
+            android:background="#555555"/>
     </TableLayout>
 </LinearLayout>
