@@ -6,6 +6,9 @@ You can install the app from Play Store at [https://play.google.com/store/apps/d
 
 If you want to download the APK outside Play Store you can [find all releases in the misc/releases directory](misc/releases).
 
+### Android 2.3.3 - Android 3.2 (API level 10 - 13)
+If you want to download the APK outside Play Store for Android from version 2.3.3 to version 3.2 please pick the APK with version 2.0.8 or earlier in the [the misc/releases directory](misc/releases). Later versions will not run on those devices.
+
 ### Android 1.5 - Android 2.3.2 (API level 3 - 9)
 If you want to download the APK outside Play Store for Android before version 2.3.3 please pick the version 1 APK in the [the misc/releases directory](misc/releases). The version 2 will not run on those devices.
 
