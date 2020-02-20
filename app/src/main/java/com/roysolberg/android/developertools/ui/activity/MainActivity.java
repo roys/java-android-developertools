@@ -9,11 +9,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
@@ -25,6 +20,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.DialogFragment;
+
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.roysolberg.android.developertools.R;
 import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragment;
 import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
