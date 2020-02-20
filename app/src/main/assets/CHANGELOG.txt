@@ -4,6 +4,8 @@ List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
 Version 2.0.10
+ * Build and targeted with Android 10 (API level 29).
+ * Migrated from Android support library to AndroidX.
  * Bugfix: App crashed on Android Pie when clicking about dialog or sharing data.
 Version 2.0.9
  * Build and targeted with Android 9: Pie (API level 28).
