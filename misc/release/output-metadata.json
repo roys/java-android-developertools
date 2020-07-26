@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.roysolberg.android.developertools",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 67,
+      "versionName": "2.1.0",
+      "enabled": true,
+      "outputFile": "developertools-2.1.0.apk"
+    }
+  ]
+}
