@@ -16,6 +16,8 @@ public class Utils {
                 version = packageInfo.versionName;
             } catch (PackageManager.NameNotFoundException e) {
                 /* no-op */
+            } catch (SecurityException e) {
+                /* no-op */
             }
         }
         return version;

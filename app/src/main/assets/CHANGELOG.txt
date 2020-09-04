@@ -3,6 +3,9 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.1.1
+ * Bugfix: App crashed on larger screen sized (like Android TV). Bug introduced in version 2.1.0.
+ * Bugfix: Fix for rare issue on some devices when fetching the app version for sharing data and the about dialog.
 Version 2.1.0
  * Build and targeted with Android 11 (API level 30).
  * Migrated from Android support library to AndroidX.
