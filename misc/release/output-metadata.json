@@ -11,10 +11,10 @@
       "type": "SINGLE",
       "filters": [],
       "properties": [],
-      "versionCode": 67,
-      "versionName": "2.1.0",
+      "versionCode": 68,
+      "versionName": "2.1.1",
       "enabled": true,
-      "outputFile": "developertools-2.1.0.apk"
+      "outputFile": "developertools-2.1.1.apk"
     }
   ]
 }
