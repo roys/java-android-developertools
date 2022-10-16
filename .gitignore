@@ -5,3 +5,11 @@
 .DS_Store
 /build
 /captures
+.idea/compiler.xml
+.idea/deploymentTargetDropDown.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/shelf/
+.idea/workspace.xml
