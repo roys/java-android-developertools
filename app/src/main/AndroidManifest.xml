@@ -12,6 +12,14 @@
         android:name="android.software.leanback"
         android:required="false" />
 
+    <queries>
+        <package android:name="org.jessies.dalvikexplorer" />
+        <package android:name="org.jtb.alogcat.donate" />
+        <package android:name="org.jtb.alogcat" />
+        <package android:name="jp.susatthi.ManifestViewer" />
+        <package android:name="com.emmaguy.cleanstatusbar" />
+    </queries>
+
     <application
         android:banner="@drawable/banner"
         android:icon="@mipmap/ic_launcher"
@@ -20,9 +28,9 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name="com.roysolberg.android.developertools.ui.activity.MainActivity"
+            android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.CustomToolbar"
-            android:exported="true">
+            android:theme="@style/AppTheme.CustomToolbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

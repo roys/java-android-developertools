@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
 
         <TextView
             android:id="@+id/textView_resource_qualifiers"
@@ -17,23 +18,23 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_phone_android_24dp"
             android:drawableLeft="@drawable/ic_phone_android_24dp"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_phone_android_24dp"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/resource_qualifiers"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
 
         <TextView
             android:id="@+id/textView_system_features"
@@ -41,23 +42,23 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_check_circle_24dp"
             android:drawableLeft="@drawable/ic_check_circle_24dp"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_check_circle_24dp"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/system_features"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
 
         <TextView
             android:id="@+id/textView_screen_dimensions"
@@ -65,23 +66,23 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_stay_current_portrait_24dp"
             android:drawableLeft="@drawable/ic_stay_current_portrait_24dp"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_stay_current_portrait_24dp"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/screen_dimensions"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
 
         <TextView
             android:layout_width="match_parent"
@@ -94,7 +95,7 @@
             android:singleLine="true"
             android:text="@string/settings"
             android:textColor="@color/accent"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/textView_settings_development"
@@ -102,23 +103,23 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/tinted_settings_development"
             android:drawableLeft="@drawable/tinted_settings_development"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/tinted_settings_development"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/developer_options"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
 
         <TextView
             android:id="@+id/textView_settings_permissions"
@@ -126,27 +127,28 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_tune_24dp"
             android:drawableLeft="@drawable/ic_tune_24dp"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_tune_24dp"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/app_ops"
             android:textColor="@color/primary_text"
             android:textSize="16sp"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <include
             android:id="@+id/include_list_divider"
             layout="@layout/list_divider"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView_settings_apps"
@@ -154,23 +156,23 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_adb_24dp"
             android:drawableLeft="@drawable/ic_adb_24dp"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_adb_24dp"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/apps"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
 
         <TextView
             android:layout_width="match_parent"
@@ -183,7 +185,7 @@
             android:singleLine="true"
             android:text="@string/third_party_apps"
             android:textColor="@color/accent"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/textView_app_alogcat"
@@ -191,23 +193,23 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_alogcat"
             android:drawableLeft="@drawable/ic_alogcat"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_alogcat"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/alogcat"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
 
         <TextView
             android:id="@+id/textView_app_cleanStatusBar"
@@ -215,25 +217,25 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_clean_status_bar"
             android:drawableLeft="@drawable/ic_clean_status_bar"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_clean_status_bar"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/clean_status_bar"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <include
             android:id="@+id/include_list_divider_clean_status_bar"
-            layout="@layout/list_divider"/>
+            layout="@layout/list_divider" />
 
         <TextView
             android:id="@+id/textView_app_dalvik_explorer"
@@ -241,23 +243,23 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_dalvik_explorer"
             android:drawableLeft="@drawable/ic_dalvik_explorer"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_dalvik_explorer"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/dalvik_explorer"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
 
         <TextView
             android:id="@+id/textView_app_manifestviewer"
@@ -265,22 +267,22 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:drawableStart="@drawable/ic_manifestviewer"
             android:drawableLeft="@drawable/ic_manifestviewer"
             android:drawablePadding="@dimen/padding_drawable_main_list"
-            android:drawableStart="@drawable/ic_manifestviewer"
             android:ellipsize="end"
             android:focusable="true"
             android:fontFamily="sans-serif"
             android:onClick="onListItemClicked"
-            android:paddingBottom="20dp"
             android:paddingLeft="16dp"
-            android:paddingRight="@dimen/padding_right_main_list"
             android:paddingTop="16dp"
+            android:paddingRight="@dimen/padding_right_main_list"
+            android:paddingBottom="20dp"
             android:singleLine="true"
             android:text="@string/manifestviewer"
             android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-        <include layout="@layout/list_divider"/>
+        <include layout="@layout/list_divider" />
     </LinearLayout>
 </ScrollView>

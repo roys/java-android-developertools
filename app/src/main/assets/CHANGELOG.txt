@@ -3,6 +3,9 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.1.2
+ * Built and targeted with Android 13 (API level 33).
+ * Added missing package queries for Android 11+ for when opening third party apps.
 Version 2.1.1
  * Bugfix: App crashed on larger screen sized (like Android TV). Bug introduced in version 2.1.0.
  * Bugfix: Fix for rare issue on some devices when fetching the app version for sharing data and the about dialog.
