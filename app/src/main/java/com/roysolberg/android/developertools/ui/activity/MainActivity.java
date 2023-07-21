@@ -1,6 +1,5 @@
 package com.roysolberg.android.developertools.ui.activity;
 
-import android.annotation.TargetApi;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.DialogInterface;
@@ -251,10 +250,8 @@ public class MainActivity extends AppCompatActivity {
     protected void startDevelopmentSettingsActivity() {
         try {
             startActivity(new Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-        } catch (ActivityNotFoundException e) {
-            startDevelopmentSettingsActivityWithAlternativeMethod();
-        } catch (NullPointerException e) { // This has happened in some rare (3) cases for some reason.
-            Log.e(TAG, "Got NullPointerException while trying to start development settings. Trying alternative method.", e);
+        } catch (Exception e) {
+            Log.e(TAG, "Got exception while trying to start development settings. Trying alternative method.", e);
             startDevelopmentSettingsActivityWithAlternativeMethod();
         }
     }
@@ -262,14 +259,14 @@ public class MainActivity extends AppCompatActivity {
     protected void startDevelopmentSettingsActivityWithAlternativeMethod() {
         try {
             startActivity(new Intent("com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)); // Bug in FROYO
-        } catch (ActivityNotFoundException e2) {
+        } catch (Exception e2) {
             try {
                 startActivity(new Intent(Intent.ACTION_MAIN).setComponent(new ComponentName("com.android.settings", "com.android.settings.DevelopmentSettings")).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)); // The way to do it on at least LG GW620 Eve running Android 1.5
-            } catch (ActivityNotFoundException e3) {
+            } catch (Exception e3) {
                 Toast.makeText(getApplicationContext(), "Unable to open development settings directly.", Toast.LENGTH_SHORT).show();
                 try {
                     startActivity(new Intent(Settings.ACTION_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-                } catch (ActivityNotFoundException e4) {
+                } catch (Exception e4) {
                     Toast.makeText(getApplicationContext(), "Unable to open device settings.", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -279,12 +276,11 @@ public class MainActivity extends AppCompatActivity {
     protected void startApplicationSettingsActivity() {
         try {
             startActivity(new Intent(Settings.ACTION_APPLICATION_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-        } catch (ActivityNotFoundException e) {
+        } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "Unable to open applications.", Toast.LENGTH_SHORT).show();
         }
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     protected void startPermissionManager() {
         try {
             Intent intent = new Intent();
@@ -295,11 +291,8 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(":android:show_fragment", "com.android.settings.applications.AppOpsSummary");
             startActivity(intent);
             Toast.makeText(getApplicationContext(), "Permission manager can only be accessed on a few Android versions (4.3-4.4.1).", Toast.LENGTH_LONG).show();
-        } catch (ActivityNotFoundException e) {
-            Log.e(TAG, "Got ActivityNotFoundException while trying to start permission manager.", e);
-            Toast.makeText(getApplicationContext(), "Unable to open permission manager.", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
-            Log.e(TAG, "Got Exception while trying to start permission manager.", e);
+            Log.e(TAG, "Got exception while trying to start permission manager.", e);
             Toast.makeText(getApplicationContext(), "Unable to open permission manager.", Toast.LENGTH_SHORT).show();
         }
     }
