@@ -3,6 +3,8 @@ Changelog for Developer Tools
 List of changes, newest changes first.
 ('+' = new feature, '-' = removed feature, '*' = changed feature)
 
+Version 2.1.3
+ * Hiding Clean Status Bar from Android 7 and up as demo mode is available and app doesn't work for recent Android versions.
 Version 2.1.2
  * Built and targeted with Android 13 (API level 33).
  * Added missing package queries for Android 11+ for when opening third party apps (missing since version 2.1.0).

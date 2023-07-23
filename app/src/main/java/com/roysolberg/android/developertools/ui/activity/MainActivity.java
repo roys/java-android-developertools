@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.textView_settings_permissions).setVisibility(View.VISIBLE);
             findViewById(R.id.include_list_divider).setVisibility(View.VISIBLE);
         }
-        if (sdkVersion < 15) {
+        if (sdkVersion < 15 || sdkVersion > 23) { // Android 4.0.3-6 (demo mode available from Android 7)
             findViewById(R.id.textView_app_cleanStatusBar).setVisibility(View.GONE);
             findViewById(R.id.include_list_divider_clean_status_bar).setVisibility(View.GONE);
         }
