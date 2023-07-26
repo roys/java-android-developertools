@@ -1,0 +1,10 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/tinted_settings_development"
+        android:shortcutId="dev_options"
+        android:shortcutLongLabel="@string/developer_options"
+        android:shortcutShortLabel="@string/developer_options_short">
+        <intent android:action="android.settings.APPLICATION_DEVELOPMENT_SETTINGS" />
+    </shortcut>
+</shortcuts>

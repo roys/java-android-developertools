@@ -6,6 +6,7 @@
     <string name="alogcat">aLogcat</string>
     <string name="manifestviewer">Manifestviewer</string>
     <string name="developer_options">Developer options</string>
+    <string name="developer_options_short">Dev opt</string>
     <string name="apps">Apps</string>
     <string name="resource_qualifiers">Resource qualifiers</string>
     <string name="system_features">System features</string>
