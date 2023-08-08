@@ -9,6 +9,7 @@
     <string name="developer_options_short">Dev opt</string>
     <string name="apps">Apps</string>
     <string name="resource_qualifiers">Resource qualifiers</string>
+    <string name="network">Network</string>
     <string name="system_features">System features</string>
     <string name="third_party_apps">Third party apps</string>
     <string name="settings">Settings</string>

@@ -1,5 +1,6 @@
 package com.roysolberg.android.developertools.ui.activity;
 
+import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.DialogInterface;
@@ -23,6 +24,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.roysolberg.android.developertools.R;
@@ -157,28 +159,13 @@ public class MainActivity extends AppCompatActivity {
         // TODO: Mark selected item in two pane mode
         switch (view.getId()) {
             case R.id.textView_resource_qualifiers:
-                if (twoPaneMode) {
-                    ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new ResourceQualifiersFragment()).commit();
-                } else {
-                    startActivity(new Intent(getApplicationContext(), ResourceQualifiersActivity.class));
-                }
+                open(ResourceQualifiersActivity.class, ResourceQualifiersFragment.class);
                 break;
             case R.id.textView_system_features:
-                if (twoPaneMode) {
-                    ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new SystemFeaturesFragment()).commit();
-                } else {
-                    startActivity(new Intent(getApplicationContext(), SystemFeaturesActivity.class));
-                }
+                open(SystemFeaturesActivity.class, SystemFeaturesFragment.class);
                 break;
             case R.id.textView_screen_dimensions:
-                if (twoPaneMode) {
-                    ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, new ScreenDimensionsFragment()).commit();
-                } else {
-                    startActivity(new Intent(getApplicationContext(), ScreenDimensionsActivity.class));
-                }
+                open(ScreenDimensionsActivity.class, ScreenDimensionsFragment.class);
                 break;
             case R.id.textView_app_dalvik_explorer:
                 startApp(R.string.package_name_dalvik_explorer);
@@ -201,6 +188,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.textView_settings_permissions:
                 startPermissionManager();
                 break;
+        }
+    }
+
+    private void open(Class<? extends Activity> activityClass, Class<? extends Fragment> fragmentClass) {
+        if (twoPaneMode) {
+            ((ViewGroup) findViewById(R.id.layout_content)).removeAllViews();
+            try {
+                getSupportFragmentManager().beginTransaction().replace(R.id.layout_content, fragmentClass.newInstance()).commit();
+            } catch (Exception e) {
+                throw new RuntimeException("Failed to instantiate " + fragmentClass, e);
+            }
+        } else {
+            startActivity(new Intent(getApplicationContext(), activityClass));
         }
     }
 
