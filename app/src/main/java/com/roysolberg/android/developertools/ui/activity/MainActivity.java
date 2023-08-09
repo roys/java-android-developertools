@@ -29,6 +29,7 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.roysolberg.android.developertools.R;
 import com.roysolberg.android.developertools.ui.fragment.InstallAppDialogFragment;
+import com.roysolberg.android.developertools.ui.fragment.NetworkInfoFragment;
 import com.roysolberg.android.developertools.ui.fragment.ResourceQualifiersFragment;
 import com.roysolberg.android.developertools.ui.fragment.ScreenDimensionsFragment;
 import com.roysolberg.android.developertools.ui.fragment.SystemFeaturesFragment;
@@ -158,6 +159,9 @@ public class MainActivity extends AppCompatActivity {
     public void onListItemClicked(View view) {
         // TODO: Mark selected item in two pane mode
         switch (view.getId()) {
+            case R.id.textView_network:
+                open(NetworkInfoActivity.class, NetworkInfoFragment.class);
+                break;
             case R.id.textView_resource_qualifiers:
                 open(ResourceQualifiersActivity.class, ResourceQualifiersFragment.class);
                 break;

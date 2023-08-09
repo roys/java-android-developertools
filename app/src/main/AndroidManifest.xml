@@ -52,6 +52,13 @@
                 android:value="com.roysolberg.android.developertools.ui.activity.MainActivity" />
         </activity>
         <activity
+            android:name="com.roysolberg.android.developertools.ui.activity.NetworkInfoActivity"
+            android:label="@string/network">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.roysolberg.android.developertools.ui.activity.MainActivity" />
+        </activity>
+        <activity
             android:name="com.roysolberg.android.developertools.ui.activity.SystemFeaturesActivity"
             android:label="@string/system_features">
             <meta-data
